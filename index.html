@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+</head>
+<body>
+    <center>
+        <h1>Hola, <span id="usuario"></span></h1>
+        <p>Haz click <a href="./plataforma.html">aquí</a> para agendar tu clase</p>
+    </center>
+    <script>
+        let saludo = prompt('cómo te llamas?');
+        let usuario = document.getElementById('usuario');
+        usuario.textContent = saludo;
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
