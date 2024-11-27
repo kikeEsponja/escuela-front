@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <h1>Agenda tu Turno</h1>
+    <label for="horario">Horario:</label>
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G-Gp5MLiHeFW5YPtr1h_qsdr8IKqAlJ4Qb0soIXwXonhBxyiLFp8jjNb7UNO2msDwuB6sIpkI?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
+    <!--<form id="turnoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required disabled>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required disabled>
+
+        <table border="2">
+            <tr>
+                <th>Fecha de hoy</th>
+                <th>Mañana</th>
+                <th>Pasado-mañana</th>
+            </tr>
+            <tr>
+                <td><button class="boton" data-hora="07:00" data-fecha="2024-11-27" data-dias="0">07:00 a 08:00</button></td>
+                <td><button class="boton" data-hora="07:00" data-fecha="2024-11-28" data-dias="1">07:00 a 08:00</button></td>
+                <td><button class="boton" data-hora="07:00" data-fecha="2024-11-29" data-dias="2">07:00 a 08:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+            </tr>
+            <tr>
+                <td><button class="boton" data-hora="17:00" data-fecha="2024-11-27" data-dias="0">17:00 a 18:00</button></td>
+                <td><button class="boton" data-hora="17:00" data-fecha="2024-11-28" data-dias="1">17:00 a 18:00</button></td>
+                <td><button class="boton" data-hora="17:00" data-fecha="2024-12-29" data-dias="2">17:00 a 18:00</button></td>
+            </tr>
+
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="08:00" data-fecha="2024-11-30" data-dias="5">08:00 a 09:00</button></td>
+                <td><button class="boton" data-hora="08:00" data-fecha="2024-12-01" data-dias="6">08:00 a 09:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="09:00" data-fecha="2024-11-30" data-dias="5">09:00 a 10:00</button></td>
+                <td><button class="boton" data-hora="09:00" data-fecha="2024-12-01" data-dias="6">09:00 a 10:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="10:00" data-fecha="2024-11-30" data-dias="5">10:00 a 11:00</button></td>
+                <td><button class="boton" data-hora="10:00" data-fecha="2024-12-01" data-dias="6">10:00 a 11:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="11:00" data-fecha="2024-11-30" data-dias="5">11:00 a 12:00</button></td>
+                <td><button class="boton" data-hora="11:00" data-fecha="2024-12-01" data-dias="6">11:00 a 12:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="12:00" data-fecha="2024-11-30" data-dias="5">12:00 a 13:00</button></td>
+                <td><button class="boton" data-hora="12:00" data-fecha="2024-12-01" data-dias="6">12:00 a 13:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="13:00" data-fecha="2024-11-30" data-dias="5">13:00 a 14:00</button></td>
+                <td><button class="boton" data-hora="13:00" data-fecha="2024-12-01" data-dias="6">13:00 a 14:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="14:00" data-fecha="2024-11-30" data-dias="5">14:00 a 15:00</button></td>
+                <td><button class="boton" data-hora="14:00" data-fecha="2024-12-01" data-dias="6">14:00 a 15:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="15:00" data-fecha="2024-11-30" data-dias="5">15:00 a 16:00</button></td>
+                <td><button class="boton" data-hora="15:00" data-fecha="2024-12-01" data-dias="6">15:00 a 16:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="16:00" data-fecha="2024-11-30" data-dias="5">16:00 a 17:00</button></td>
+                <td><button class="boton" data-hora="16:00" data-fecha="2024-12-01" data-dias="6">16:00 a 17:00</button></td>
+            </tr>
+            <tr>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td>-------------</td>
+                <td><button class="boton" data-hora="17:00" data-fecha="2024-11-30" data-dias="5">17:00 a 18:00</button></td>
+                <td><button class="boton" data-hora="17:00" data-fecha="2024-12-01" data-dias="6">17:00 a 18:00</button></td>
+            </tr>
+            <tr>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-25" data-dias="0">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-26" data-dias="1">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-27" data-dias="2">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-28" data-dias="3">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-29" data-dias="4">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-11-30" data-dias="5">18:00 a 19:00</button></td>
+                <td><button class="boton" data-hora="18:00" data-fecha="2024-12-01" data-dias="6">18:00 a 19:00</button></td>
+            </tr>
+            <tr>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-25" data-dias="0">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-26" data-dias="1">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-27" data-dias="2">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-28" data-dias="3">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-29" data-dias="4">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-11-30" data-dias="5">19:00 a 20:00</button></td>
+                <td><button class="boton" data-hora="19:00" data-fecha="2024-12-01" data-dias="6">19:00 a 20:00</button></td>
+            </tr>        
+            <tr>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-25" data-dias="0">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-26" data-dias="1">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-27" data-dias="2">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-28" data-dias="3">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-29" data-dias="4">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-11-30" data-dias="5">20:00 a 21:00</button></td>
+                <td><button class="boton" data-hora="20:00" data-fecha="2024-12-01" data-dias="6">20:00 a 21:00</button></td>
+            </tr>
+        </table>
+
+        <button type="submit">Agendar Turno</button>
+    </form>-->
+
+    <footer>
+        <p>ir a <a href="./admin.html">administración</a></p>
+    </footer>
+    <script>
+        let boton = document.querySelectorAll('.boton');
+        boton.forEach(boton =>{
+            boton.addEventListener('click', () =>{
+                let fecha = document.getElementById('fecha');
+                let hora = document.getElementById('hora');
+                let dias = parseInt(boton.getAttribute('data-dias'));
+
+                const fechaActual = new Date();
+                fechaActual.setDate(fechaActual.getDate() + dias);
+                let fechaFormateada = fechaActual.toISOString().split('T')[0];
+
+                fecha.value = fechaFormateada;
+                hora.value = boton.getAttribute('data-hora');
+            });
+        }); 
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
