@@ -25,13 +25,13 @@
         <label for="horario">Horario:</label>
         <table border="2">
             <tr>
-                <th>Martes</th>
                 <th>Miércoles</th>
                 <th>Jueves</th>
                 <th>Viernes</th>
                 <th>Sábado</th>
                 <th>Domingo</th>
                 <th>Lunes</th>
+                <th>Martes</th>
             </tr>
             <tr>
                 <td>-------------</td>
@@ -179,9 +179,6 @@
                 fechaActual.setDate(fechaActual.getDate() + dias);
                 let fechaFormateada = fechaActual.toISOString().split('T')[0];
 
-                /*if(fecha < fechaActual){
-                    boton.setAttribute(disabled);
-                }*/
                 fecha.value = fechaFormateada;
                 hora.value = boton.getAttribute('data-hora');
             });
