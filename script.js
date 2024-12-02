@@ -34,3 +34,10 @@ document.getElementById("turnoForm").addEventListener("submit", function (event)
             }
         );
 });
+
+let razon = document.getElementById('razon');
+razon.addEventListener('mouseover', ()=>{
+    if(razon.setAttribute('class', 'razon_left')){
+        razon.style.transform(rotate('5deg'));
+    }
+});

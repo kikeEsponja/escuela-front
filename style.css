@@ -54,10 +54,13 @@ button{
 button:hover {
     background: #0f0;
 }
-table{
-    width: 100%;
+.razon{
+    width: 75%;
+    transition: transform 0.3s ease;
 }
-td{
-    text-align: center;
-    font-size: 18px;
+.razon:hover{
+    transform: scale(1.1) rotate(-5deg);
+}
+.razon_left:hover{
+    transform: scale(1.1) rotate(5deg);
 }
