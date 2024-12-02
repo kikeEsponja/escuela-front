@@ -64,3 +64,25 @@ button:hover {
 .razon_left:hover{
     transform: scale(1.1) rotate(5deg);
 }
+section{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+section div:hover{
+    cursor: pointer;
+    width: 350px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+section div{
+    width: 0;
+    flex-grow: 0.5;
+    object-fit: cover;
+    opacity: 8;
+    transition: 0.5s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
