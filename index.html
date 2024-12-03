@@ -9,10 +9,10 @@
 <body>
     <center>
         <h1>Hola, <span id="usuario"></span></h1>
-        <!--<p>Haz click <a href="./plataforma.html">aquí</a> para agendar tu clase</p>-->
-        <div class="razon" id="razon">
+        <p class="razon">Haz click <a href="./plataforma.html">aquí</a> para agendar tu clase</p>
+        <!--<div class="razon" id="razon">
             <h3>Por razones técnicas, están suspendidas las clases hasta nuevo aviso</h3>
-        </div>
+        </div>-->
         <br>
         <section>
             <div>
@@ -34,10 +34,14 @@
                 <img src="./img/java.jpg" alt="">
             </div>
         </section>
+        <footer>
+            <p>sitio de kikeEsponja</p>
+            <p>element3999@gmail.com</p>
+        </footer>
     </center>
     <script>
-        alert('IMPORTANTE!');
-        //let saludo = prompt('cómo te llamas?');
+        //alert('IMPORTANTE!');
+        let saludo = prompt('cómo te llamas?');
         let usuario = document.getElementById('usuario');
         usuario.textContent = saludo;
     </script>
