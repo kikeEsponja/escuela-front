@@ -11,26 +11,15 @@
     <h1>Agenda tu Turno</h1>
     <label for="horario">Horario:</label>
     <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G-Gp5MLiHeFW5YPtr1h_qsdr8IKqAlJ4Qb0soIXwXonhBxyiLFp8jjNb7UNO2msDwuB6sIpkI?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
-    
+    <button id="volver">volver</button>
     <footer>
         <p>ir a <a href="./admin.html">administración</a></p>
     </footer>
     <script>
-        let boton = document.querySelectorAll('.boton');
-        boton.forEach(boton =>{
-            boton.addEventListener('click', () =>{
-                let fecha = document.getElementById('fecha');
-                let hora = document.getElementById('hora');
-                let dias = parseInt(boton.getAttribute('data-dias'));
-
-                const fechaActual = new Date();
-                fechaActual.setDate(fechaActual.getDate() + dias);
-                let fechaFormateada = fechaActual.toISOString().split('T')[0];
-
-                fecha.value = fechaFormateada;
-                hora.value = boton.getAttribute('data-hora');
+        let volver = document.getElementById('volver');
+        volver.addEventListener('click', () =>{
+                window.location.href = './index.html';
             });
-        }); 
     </script>
     <script src="script.js"></script>
 </body>
