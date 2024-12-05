@@ -1,0 +1,10 @@
+body{
+    color: #fff;
+    background: #444;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #ff0;
+}

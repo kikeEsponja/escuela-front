@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Escuela</title>
+    <style>
+        .carrusel{
+            position: relative;
+            border: 2px solid #000;
+            background: #00f;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .carrusel-inner{
+            display: flex;
+            justify-content: space-around;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carrusel-item{
+            display: flex;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            margin: 0 10px;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .frame{
+            background: #ff0;
+            border: 2px solid #000;
+            width: 100%;
+            height: 250px;
+            position: absolute;
+        }
+        .boton_carrusel{
+            width: 100px;
+            height: 50px;
+        }
+        img{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+            <h1>Carrusel</h1>
+            <div style="display: flex; align-items: center;">
+                <button class="boton_carrusel" id="atras">atrás</button>
+                <div class="carrusel">
+                    <div class="carrusel-inner" id="carrusel-inner">
+                        <div class="carrusel-item">
+                            <a href="./secciones/portafolio/index.html"><img src="./secciones/portafolio/img/enriquesvg.svg" alt=""></a>
+                        </div>
+                        <!--<div class="carrusel-item">
+                            <div class="frame">profe 2</div>
+                        </div>
+                        <div class="carrusel-item">
+                            <div class="frame">profe 3</div>
+                        </div>
+                        <div class="carrusel-item">
+                            <div class="frame">profe 4</div>
+                        </div>
+                        <div class="carrusel-item">
+                            <div class="frame">profe 5</div>
+                        </div>
+                        <div class="carrusel-item">
+                            <div class="frame">profe 6</div>
+                        </div>-->
+                    </div>
+                </div>
+                <button class="boton_carrusel" id="adelante">adelante</button>
+            </div>
+
+        <footer>
+            <p>sitio de kikeEsponja</p>
+            <p>element3999@gmail.com</p>
+            <!--<p>Conoce a los profes <a href="./profes.html">aquí</a></p>-->
+            <button id="volver">Volver</button>
+        </footer>
+    </center>
+    <script>
+        //alert('IMPORTANTE!');
+/*        let nombreGuardado = localStorage.getItem('nombreUsuario');
+
+        if(nombreGuardado){
+            document.getElementById('usuario').textContent = nombreGuardado;
+        }else{
+            let ask = document.getElementById('ask');
+            ask.addEventListener('click', ()=>{
+                let saludo = prompt('cómo te llamas?');
+                if(saludo){
+                    localStorage.setItem('nombreUsuario', saludo);
+                    document.getElementById('usuario').textContent = saludo;
+                    document.getElementById('razon').style.display = 'block';
+                    ask.style.display = 'none';
+                }
+            });
+        }*/
+
+        const carruselInner = document.getElementById('carrusel-inner');
+        const adelante = document.getElementById('adelante');
+        const atras = document.getElementById('atras');
+
+        let currentIndex = 0;
+        const totalItems = document.querySelectorAll('.carrusel-item').length;
+        const itemWidth = 270;
+
+        function updateCarrusel(){
+            const offset = -currentIndex * itemWidth;
+            carruselInner.style.transform = `translateX(${offset}px)`;
+        }
+        adelante.addEventListener('click', ()=>{
+            if(currentIndex < totalItems - 1){
+                currentIndex++;
+                updateCarrusel();
+            }
+        });
+
+        atras.addEventListener('click', ()=>{
+            if(currentIndex > 0){
+                currentIndex--;
+                updateCarrusel();
+            }
+        });
+
+        let volver = document.getElementById('volver');
+        volver.addEventListener('click', ()=>{
+            window.location.href = './index.html'
+        });
+    </script>
+    <!--<script src="./script.js"></script>-->
+</body>
+</html>

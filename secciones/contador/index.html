@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contador.css">
+    <title>Contador</title>
+</head>
+<body>
+    <center>
+        <h1>Contador de clicks</h1>
+        <div>
+            <label for="meta">Cuál es la meta?</label>
+            <input type="number" name="meta" id="meta" placeholder="Ingrese un número">
+            <button id="ok">Ok</button>
+        </div>
+
+        <h3>Clicks: <span id="clicks"></span></h3>
+        <button id="boton">Haz click aquí</button>
+        <button id="limpiar">Limpiar</button>
+
+        <h3>Faltan: <span id="faltan"></span></h3>
+    </center>
+
+    <script src="./contador.js"></script>
+</body>
+</html>
