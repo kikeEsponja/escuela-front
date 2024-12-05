@@ -1,0 +1,35 @@
+.loader-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 155px;
+    overflow: hidden;
+}
+.loader {
+    position: absolute;
+    left: 0;
+    background: #3498db;
+    width: 30px;
+    height: 100%;
+    border: 2px solid #ddd;
+    animation: spin 2s linear alternate;
+}
+#percentage {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+@keyframes spin {
+    100% {
+        transform: translateY(0%);
+        background: #3498db;
+    }
+    0% {
+        transform: translateY(100%);
+        background: #000;
+    }
+}

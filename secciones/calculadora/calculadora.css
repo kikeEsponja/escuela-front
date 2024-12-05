@@ -1,0 +1,36 @@
+
+#pantalla{
+    height: 45px;
+    border-radius: 10px;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0.2%;
+    background: #aaa;
+}
+button:hover{
+    background: #f0f;
+}
+.op{
+    background: #1334ff;
+}
+.op:hover{
+    background: #1319a4;
+}
+.carcaza{
+    border: 2px solid #000;
+}
+.del:hover{
+    background: #ff0;
+}
+.c:hover{
+    background: #f00;
+}
+.igual{
+    width: 10%;
+}
+.igual:hover{
+    background: #0f0;
+}

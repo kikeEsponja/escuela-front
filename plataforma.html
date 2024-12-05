@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Agenda tu Turno</h1>
+        <label for="horario">Horario:</label>
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G-Gp5MLiHeFW5YPtr1h_qsdr8IKqAlJ4Qb0soIXwXonhBxyiLFp8jjNb7UNO2msDwuB6sIpkI?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
+        <div class="salir">
+            <button id="salir">Salir</button>
+        </div>
+        <footer>
+            <!--<p>ir a <a href="./admin.html">administración</a></p>-->
+            <p>sitio de kikeEsponja</p>
+            <p>element3999@gmail.com</p>
+        </footer>    
+    </center>
+    <script>
+        /*let volver = document.getElementById('volver');
+        volver.addEventListener('click', () =>{
+            window.location.href = './index.html';
+        });*/
+
+        let salir = document.getElementById('salir');
+        salir.addEventListener('click', ()=>{
+            localStorage.removeItem('nombreUsuario');
+            window.location.href = './index.html'
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
