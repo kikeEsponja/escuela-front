@@ -54,6 +54,10 @@
 
         if(nombreGuardado){
             document.getElementById('usuario').textContent = nombreGuardado;
+            let ask = document.getElementById('ask');
+            ask.style.display = 'none';
+            let razon = document.getElementById('razon');
+            razon.style.display = 'block';
         }else{
             let ask = document.getElementById('ask');
             ask.addEventListener('click', ()=>{
