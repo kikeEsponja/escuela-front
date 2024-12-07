@@ -89,4 +89,11 @@ img{
 .salir{
     position: fixed;
     top: 50px;
+    display: flex;
+    width: 30%;
 }
+/*@media(max-width: 900px){
+    section{
+        width: 100%;
+    }
+}*/

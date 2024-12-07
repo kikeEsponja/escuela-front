@@ -11,7 +11,7 @@
             border: 2px solid #000;
             background: #00f;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 100%;
             height: 300px;
@@ -36,49 +36,53 @@
             width: 100px;
             height: 50px;
         }
-        img{
+        img, .frame{
             border: 2px solid black;
             border-radius: 10px;
             width: 100%;
-            height: 290px;
+            height: 250px;
         }
         @media screen and ((min-width: 200px) and (max-width:470px)) {
            .carrusel-item{
             width: 135px;
-           }
+           } 
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 25px;
         }
     </style>
 </head>
 <body>
     <center>
-        
-            <h1>Instructores</h1>
-            <div style="display: flex; align-items: center;">
-                <button class="boton_carrusel" id="atras">atrás</button>
-                <div class="carrusel">
-                    <div class="carrusel-inner" id="carrusel-inner">
-                        <div class="carrusel-item">
-                            <a href="./secciones/portafolio/index.html"><img src="./secciones/portafolio/img/enriquesvg.svg" alt=""></a>
-                        </div>
-                        <div class="carrusel-item">
-                            <a href="./secciones/portafolio_eleazar/index.html"><img src="./img/eleazar.jpg" alt=""></a>
-                        </div>
-                        <div class="carrusel-item">
-                            <a href="./secciones/portafolio_migda/index.html"><img src="./secciones/portafolio_migda/img/foto2.png" alt=""></a>
-                        </div>
-                        <div class="carrusel-item">
-                            <div class="frame">profe 4</div>
-                        </div>
-                        <div class="carrusel-item">
-                            <div class="frame">profe 5</div>
-                        </div>
-                        <div class="carrusel-item">
-                            <div class="frame">profe 6</div>
-                        </div>
+        <h1>Cursos</h1>
+        <div style="display: flex; align-items: center;">
+            <!--<button class="boton_carrusel" id="atras">atrás</button>-->
+            <div class="carrusel">
+                <div class="carrusel-inner" id="carrusel-inner">
+                    <div class="carrusel-item">
+                        <a href="./plataforma_kike.html"><img src="./img/programacion.jpg" alt="">Programación</a>
                     </div>
+                    <div class="carrusel-item">
+                        <a href="./plataforma_eleazar.html"><img src="./img/usaflag.jpg" alt="">Inglés</a>
+                    </div>
+                    <div class="carrusel-item">
+                        <a href="./plataforma_migda.html"><img src="./img//testing.jpg" alt="">Software testing</a>
+                    </div>
+                    <!--<div class="carrusel-item">
+                        <div class="frame">profe 4</div>
+                    </div>
+                    <div class="carrusel-item">
+                        <div class="frame">profe 5</div>
+                    </div>
+                    <div class="carrusel-item">
+                        <div class="frame">profe 6</div>
+                    </div>-->
                 </div>
-                <button class="boton_carrusel" id="adelante">adelante</button>
             </div>
+            <!--<button class="boton_carrusel" id="adelante">adelante</button>-->
+        </div>
 
         <footer>
             <p>sitio de kikeEsponja</p>
@@ -134,7 +138,7 @@
 
         let volver = document.getElementById('volver');
         volver.addEventListener('click', ()=>{
-            window.location.href = './index.html'
+            window.history.back();
         });
     </script>
     <!--<script src="./script.js"></script>-->
