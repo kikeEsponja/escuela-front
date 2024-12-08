@@ -7,45 +7,28 @@
     <title>Escuela</title>
     <style>
         .carrusel{
-            position: relative;
-            border: 2px solid #000;
-            background: #00f;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-        }
-        .carrusel-inner{
-            display: flex;
-            justify-content: space-around;
-            transition: transform 0.5s ease-in-out;
+            flex-wrap: wrap;
         }
         .carrusel-item{
             display: flex;
             width: 250px;
             height: 250px;
-            position: relative;
-            margin: 0 10px;
-            flex-shrink: 0;
+            margin: 2%;
             justify-content: center;
-            align-items: center;
         }
-        .boton_carrusel{
-            width: 100px;
-            height: 50px;
-        }
-        img, .frame{
+        img{
             border: 2px solid black;
             border-radius: 10px;
             width: 100%;
             height: 250px;
         }
         @media screen and ((min-width: 200px) and (max-width:470px)) {
-           .carrusel-item{
-            width: 135px;
-           } 
+            .carrusel-item{
+                margin: 10%;
+            }
         }
         a{
             text-decoration: none;
@@ -57,33 +40,33 @@
 <body>
     <center>
         <h1>Cursos</h1>
-        <div style="display: flex; align-items: center;">
+        <div>
             <!--<button class="boton_carrusel" id="atras">atrás</button>-->
             <div class="carrusel">
-                <div class="carrusel-inner" id="carrusel-inner">
-                    <div class="carrusel-item">
-                        <a href="./plataforma_kike.html"><img src="../img/programacion.jpg" alt="">Programación</a>
-                    </div>
-                    <div class="carrusel-item">
-                        <a href="./plataforma_eleazar.html"><img src="../img/usaflag.jpg" alt="">Inglés</a>
-                    </div>
-                    <div class="carrusel-item">
-                        <a href="./plataforma_migda.html"><img src="../img//testing.jpg" alt="">Software testing</a>
-                    </div>
-                    <!--<div class="carrusel-item">
-                        <div class="frame">profe 4</div>
-                    </div>
-                    <div class="carrusel-item">
-                        <div class="frame">profe 5</div>
-                    </div>
-                    <div class="carrusel-item">
-                        <div class="frame">profe 6</div>
-                    </div>-->
+                <div class="carrusel-item">
+                    <a href="./plataforma_kike.html"><img src="../img/programacion.jpg" alt="">Programación</a>
                 </div>
-            </div>
+                <div class="carrusel-item">
+                    <a href="./plataforma_eleazar.html"><img src="../img/usaflag.jpg" alt="">Inglés</a>
+                </div>
+                <div class="carrusel-item">
+                    <a href="./plataforma_migda.html"><img src="../img//testing.jpg" alt="">Software testing</a>
+                </div>
+                <!--
+                <div class="carrusel-item">
+                    <a href="./plataforma_kike.html"><img src="../img/programacion.jpg" alt="">Programación</a>
+                </div>
+                <div class="carrusel-item">
+                    <a href="./plataforma_eleazar.html"><img src="../img/usaflag.jpg" alt="">Inglés</a>
+                </div>
+                <div class="carrusel-item">
+                    <a href="./plataforma_migda.html"><img src="../img//testing.jpg" alt="">Software testing</a>
+                </div>
+            </div>-->
             <!--<button class="boton_carrusel" id="adelante">adelante</button>-->
         </div>
-
+        <br>
+        <hr>
         <footer>
             <p>sitio de kikeEsponja</p>
             <p>element3999@gmail.com</p>
