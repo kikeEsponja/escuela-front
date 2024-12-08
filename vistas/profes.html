@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Escuela</title>
     <style>
         .carrusel{
             position: relative;
-            border: 2px solid #000;
             background: #00f;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
             height: 300px;
@@ -36,52 +36,79 @@
             width: 100px;
             height: 50px;
         }
-        img, .frame{
+        a{
+            width: 250px;
+            height: 250px;
             border: 2px solid black;
             border-radius: 10px;
+        }
+        img{
+            border-radius: 10px;
             width: 100%;
-            height: 250px;
+            height: 100%;
         }
         @media screen and ((min-width: 200px) and (max-width:470px)) {
-           .carrusel-item{
-            width: 135px;
-           } 
-        }
-        a{
-            text-decoration: none;
-            color: #000;
-            font-size: 25px;
+            .carrusel{
+                height: 100%;
+                justify-content: center;
+            }
+            .carrusel-inner{
+                align-items: center;
+                flex-direction: column;
+            }
+            .carrusel-item{
+                margin: 1%;
+            }
+            .boton_carrusel{
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <center>
-        <h1>Cursos</h1>
+        <h1>Instructores</h1>
         <div style="display: flex; align-items: center;">
-            <!--<button class="boton_carrusel" id="atras">atrás</button>-->
+            <button class="boton_carrusel bi bi-arrow-left" id="atras"></button>
             <div class="carrusel">
                 <div class="carrusel-inner" id="carrusel-inner">
                     <div class="carrusel-item">
-                        <a href="./plataforma_kike.html"><img src="./img/programacion.jpg" alt="">Programación</a>
+                        <a href="../secciones/portafolio/index.html">
+                            <img class="img_profes" src="../secciones/portafolio_kike/img/enriquesvg.svg" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
                     </div>
                     <div class="carrusel-item">
-                        <a href="./plataforma_eleazar.html"><img src="./img/usaflag.jpg" alt="">Inglés</a>
+                        <a href="../secciones/portafolio_eleazar/index.html">
+                            <img class="img_profes" src="../img/eleazar.jpg" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
                     </div>
                     <div class="carrusel-item">
-                        <a href="./plataforma_migda.html"><img src="./img//testing.jpg" alt="">Software testing</a>
-                    </div>
-                    <!--<div class="carrusel-item">
-                        <div class="frame">profe 4</div>
-                    </div>
-                    <div class="carrusel-item">
-                        <div class="frame">profe 5</div>
+                        <a href="../secciones/portafolio_migda/index.html">
+                            <img class="img_profes" src="../img/fotomigda.jpg" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
                     </div>
                     <div class="carrusel-item">
-                        <div class="frame">profe 6</div>
-                    </div>-->
+                        <a href="../secciones/portafolio_migda/index.html">
+                            <img class="img_profes" src="" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
+                    </div>
+                    <div class="carrusel-item">
+                        <a href="../secciones/portafolio_migda/index.html">
+                            <img class="img_profes" src="" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
+                    </div>
+                    <div class="carrusel-item">
+                        <a href="../secciones/portafolio_migda/index.html">
+                            <img class="img_profes" src="" alt="" onerror="src='/img/reloj.jpg'">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!--<button class="boton_carrusel" id="adelante">adelante</button>-->
+            <button class="boton_carrusel bi bi-arrow-right" id="adelante"></button>
         </div>
 
         <footer>
@@ -110,7 +137,7 @@
             });
         }*/
 
-        /*const carruselInner = document.getElementById('carrusel-inner');
+        const carruselInner = document.getElementById('carrusel-inner');
         const adelante = document.getElementById('adelante');
         const atras = document.getElementById('atras');
 
@@ -134,13 +161,13 @@
                 currentIndex--;
                 updateCarrusel();
             }
-        });*/
+        });
 
         let volver = document.getElementById('volver');
         volver.addEventListener('click', ()=>{
             window.history.back();
         });
     </script>
-    <!--<script src="./script.js"></script>-->
+    <!--<script src="../script.js"></script>-->
 </body>
 </html>

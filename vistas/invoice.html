@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .invoice-details {
+            margin-bottom: 20px;
+        }
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .invoice-details th, 
+        .invoice-details td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .total {
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invoice-box">
+    <div class="header">
+        <h1>Invoice</h1>
+        <p>Invoice Date: <!--<strong>< ?php echo date("F j, Y"); ?></strong>--><strong>07 December 2024</strong></p>
+    </div>
+
+    <div class="invoice-details">
+        <table>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Enrique Barreto</strong><br>
+                    Freelancer<br>
+                    Email: element3999@gmail.com<br>
+                    Lanús<br>
+                    Buenos Aires<br>
+                    Argentina
+                </td>
+                <td>
+                    <strong>IONYX</strong><br>
+                    Id: 001
+                    <br>
+                    Australia
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="invoice-details">
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Amount (USD)</th>
+            </tr>
+            <tr>
+                <td>Freelance work for November</td>
+                <td>$600.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="total">
+        <p>Total Amount Due: <strong>$600.00 USD</strong></p>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for your business!</p>
+    </div>
+</div>
+
+</body>
+</html>
