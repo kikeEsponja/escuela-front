@@ -13,7 +13,8 @@
 </head>
 <body>
     <center>
-        <h1>Bienvenido <span id="usuario"></span></h1>
+        <h1 id="bienvenido"></h1>
+        <h2><span id="usuario"></span></h2>
         <button id="ask">Cómo te llamas?</button>
         <br>
         <p id="razon">Haz click <a href="./vistas/materias.html">aquí</a> para agendar tu clase</p>
@@ -111,14 +112,17 @@
         //alert('IMPORTANTE!');
         let nombreGuardado = localStorage.getItem('nombreUsuario');
         let salir = document.getElementById('salir');
+        let bienvenido = document.getElementById('bienvenido');
+        bienvenido.textContent = 'Bienvenido';
 
         if(nombreGuardado){
-            document.getElementById('usuario').textContent = nombreGuardado;
+            document.getElementById('usuario').textContent = 'Hola, ' + nombreGuardado;
             let ask = document.getElementById('ask');
             ask.style.display = 'none';
             let razon = document.getElementById('razon');
             razon.style.display = 'block';
             salir.style.display = 'block';
+            bienvenido.textContent = '';
         }else{
             let ask = document.getElementById('ask');
             salir.style.display = 'none';
@@ -126,6 +130,7 @@
                 let saludo = prompt('cómo te llamas?');
                 if(saludo){
                     localStorage.setItem('nombreUsuario', saludo);
+                    bienvenido.textContent = '';
                     document.getElementById('usuario').textContent = 'Hola, ' + saludo;
                     document.getElementById('razon').style.display = 'block';
                     ask.style.display = 'none';
