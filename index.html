@@ -13,7 +13,7 @@
 </head>
 <body>
     <center>
-        <h1>Hola, <span id="usuario"></span></h1>
+        <h1>Bienvenido <span id="usuario"></span></h1>
         <button id="ask">Cómo te llamas?</button>
         <br>
         <p id="razon">Haz click <a href="./vistas/materias.html">aquí</a> para agendar tu clase</p>
@@ -110,6 +110,7 @@
     <script>
         //alert('IMPORTANTE!');
         let nombreGuardado = localStorage.getItem('nombreUsuario');
+        let salir = document.getElementById('salir');
 
         if(nombreGuardado){
             document.getElementById('usuario').textContent = nombreGuardado;
@@ -117,20 +118,22 @@
             ask.style.display = 'none';
             let razon = document.getElementById('razon');
             razon.style.display = 'block';
+            salir.style.display = 'block';
         }else{
             let ask = document.getElementById('ask');
+            salir.style.display = 'none';
             ask.addEventListener('click', ()=>{
                 let saludo = prompt('cómo te llamas?');
                 if(saludo){
                     localStorage.setItem('nombreUsuario', saludo);
-                    document.getElementById('usuario').textContent = saludo;
+                    document.getElementById('usuario').textContent = 'Hola, ' + saludo;
                     document.getElementById('razon').style.display = 'block';
                     ask.style.display = 'none';
+                    salir.style.display = 'block';
                 }
             });
         }
 
-        let salir = document.getElementById('salir');
         salir.addEventListener('click', ()=>{
             localStorage.removeItem('nombreUsuario');
             window.location.href = './index.html'
