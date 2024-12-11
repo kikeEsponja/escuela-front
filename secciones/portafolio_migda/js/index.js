@@ -3,15 +3,15 @@ function goBack(){
 }
 
 // TECNOLOGÍAS
-const tech = document.getElementById('tech');
+//const tech = document.getElementById('tech');
 
-const tecnologias = ['Bootstrap', 'CSS', 'HTML', 'javaScript', 'PHP', 'SQL', 'WordPress'];
+//const tecnologias = ['Bootstrap', 'CSS', 'HTML', 'javaScript', 'PHP', 'SQL', 'WordPress'];
 
-function azar(){
+/*function azar(){
     return tecnologias[Math.floor(Math.random() * tecnologias.length)];
-}
+}*/
 
-function actualizarTecnologias(){
+/*function actualizarTecnologias(){
     tech.classList.add('animacion-cambio');
     //tech.style.opacity = 0;
     tech.style.border = '3px solid green';
@@ -24,22 +24,22 @@ function actualizarTecnologias(){
     },
     500
     );
-}
+}*/
 
-actualizarTecnologias();
+//actualizarTecnologias();
 
-setInterval(actualizarTecnologias, 3000);
+//setInterval(actualizarTecnologias, 3000);
 
 // CURSOS
-const cursos = document.getElementById('cursos');
+/*const cursos = document.getElementById('cursos');
 
 const cursosPorHacer = ['Back-end', 'Cyber Seguridad', 'Mobile Apps', 'React', 'Web-Socket', 'JAVA', 'Python', 'MongoDb'];
 
 function azarCursos(){
     return cursosPorHacer[Math.floor(Math.random() * cursosPorHacer.length)];
-}
+}*/
 
-function actualizarCursos(){
+/*function actualizarCursos(){
     cursos.classList.add('animacion-cambio');
     //cursos.style.opacity = 0;
     cursos.style.border = '3px solid red';
@@ -52,11 +52,11 @@ function actualizarCursos(){
     },
     500
     );
-}
+}*/
 
-actualizarCursos();
+//actualizarCursos();
 
-setInterval(actualizarCursos, 3000);
+//setInterval(actualizarCursos, 3000);
 
 // CAMBIO DE PALABRA LARGA
 /*var palabra = document.getElementById('cambio-palabra');
@@ -67,7 +67,7 @@ if(window.innerWidth > 435){
 }*/
 
 // FRASES CÉLEBRES
-var frases = document.getElementById('frases');
+/*var frases = document.getElementById('frases');
 
 const arreglo = ['"El arte de la victoria se aprende en las derrotas", Simón Bolivar.',
 '"Si crees que puedes, puedes, y si crees que no puedes, no puedes, en ambos casos estás en lo cierto.", Henry Ford.',
@@ -89,4 +89,4 @@ function actualizarFrase(){
     );
 }
 actualizarFrase();
-setInterval(actualizarFrase, 5000);
+setInterval(actualizarFrase, 5000);*/
