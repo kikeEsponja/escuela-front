@@ -26,7 +26,7 @@
         <h2><span id="usuario"></span></h2>
         <button id="ask">Cómo te llamas?</button>
         <br>
-        <p id="razon">Haz click <a href="./vistas/materias.html">aquí</a> para agendar tu clase</p>
+        <p id="razon">Haz click <a href="./vistas/materias.html" class="aqui">aquí</a> para agendar tu clase</p>
         <!--<div class="razon" id="razon">
             <h3>Por razones técnicas, están suspendidas las clases hasta nuevo aviso</h3>
         </div>-->
@@ -110,10 +110,29 @@
             </div>
         </section>-->
 
+        <hr>
+        <div class="info">
+            <div>
+                <h4>Estás buscando reforzar conocimientos en algún tema?</h4>
+            </div>
+            <div>
+                <h4>Estás cansado de cursos extremadamente costosos y con clases grabadas?</h4>
+            </div>
+            <div>
+                <h4>Contacta con profesores reales, capacitados para enseñar</h4>
+            </div>
+            <div>
+                <h4>"No es lo mismo ser experto en algo, que poder enseñar"</h4>
+            </div>
+            
+            
+            
+            
+        </div>
         <footer>
+            <button id="ir_profes">Conoce a los profes aquí</button>
             <p>sitio de kikeEsponja</p>
             <p>element3999@gmail.com</p>
-            <p>Conoce a los profes <a href="./vistas/profes.html">aquí</a></p>
             <button id="salir">Salir</button>
         </footer>
     </center>
@@ -152,6 +171,11 @@
             localStorage.removeItem('nombreUsuario');
             window.location.href = './index.html'
         });
+
+        const irProfes = document.getElementById('ir_profes');
+        irProfes.addEventListener('click', ()=>{
+            window.location.href = './vistas/profes.html'
+        })
     </script>
     <!--<script src="./script.js"></script>-->
 </body>
