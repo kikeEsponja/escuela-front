@@ -4,3 +4,14 @@ nav{
 .logo{
     border-radius: 50%;
 }
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+aside{
+    position: fixed;
+    display: flex;
+}
+aside a{
+    margin: 10%;
+}
