@@ -130,6 +130,29 @@ img{
 .info div:hover{
     transform: scale(1.1);
 }
+.mantenimiento{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.mantenimiento_imagen{
+    width: 60%;
+    height: 60%;
+    animation:alternate alternate 5s infinite;
+}
+@keyframes alternate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
 @media(max-width: 1000px){
     .info{
         height: 100%;
