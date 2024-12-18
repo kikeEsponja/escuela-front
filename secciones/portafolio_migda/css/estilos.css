@@ -15,7 +15,7 @@ body{
 .foto{
     border-radius: 50%;
     width: 25%;
-    height: 170px;
+    height: 150px;
 }
 aside{
     display: flex;
@@ -24,6 +24,10 @@ aside{
     position: fixed;
     top:40%;
     right: 20px;
+}
+.text-dark{
+    text-align: justify;
+    margin: 1%;
 }
 header{
     position: fixed;
@@ -171,25 +175,44 @@ details, .story > p, .libros > p, ul{
 
 }
 @media screen and (max-width: 1330px) and (min-width: 700px) {
-
 }
 @media (max-width: 991px) {
-
+    .foto{
+        width: 30%;
+        height: 140px;
+    }
 }
 @media screen and (max-width: 800px) and (min-width: 200px){
-
+    .foto{
+        width: 35%;
+    }
 }
-@media screen and (max-width:794px) and (min-width: 300px) {
-
+@media screen and (max-width:700px) and (min-width: 300px) {
+    .foto{
+        width: 40%;
+    }
 }
-@media screen and (max-width: 699px) and (min-width: 300px) {
-
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .sobremi{
+        width: 75%;
+    }
 }
 @media screen and (max-width:500px) and (min-width:100px) {
-
+    .presentacion{
+        display:flex;
+    }
+    .sobremi{
+        width: 85%;
+    }
+    .botones-modal-enlaces{
+        flex-direction: column;
+        width: 50%;
+    }
 }
-@media(max-width: 414px){
-
+@media(max-width: 400px){
+    .foto{
+        width: 45%;
+    }
 }
 @media screen and (max-width:350px) and (min-width:100px) {
 
