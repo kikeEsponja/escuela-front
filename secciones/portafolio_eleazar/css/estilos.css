@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
     background: linear-gradient(#615231, #2e20ac);
 }
@@ -7,6 +12,7 @@ nav{
 ul{
     list-style: none;
     text-decoration: none;
+    padding: inherit;
 }
 aside{
     position: fixed;
