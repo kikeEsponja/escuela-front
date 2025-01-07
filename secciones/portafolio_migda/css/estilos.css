@@ -221,6 +221,7 @@ details, .story > p, .libros > p, ul{
         position: relative;
         width: 100%;
         justify-content: center;
+        right: 0;
     }
     aside > a{
         margin: 5%;
