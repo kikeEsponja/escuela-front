@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/shortcut.svg" type="image/x-icon" class="logo_provisional">
     <title>Escuela</title>
     <style>
         #razon{
             display: none;
+        }
+        .logo_provisional{
+            width: 8%;
+            animation:alternate alternate 5s infinite;
+        }
+        @keyframes alternate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(240deg);
+            }
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -22,6 +35,7 @@
 </head>
 <body>
     <center>
+        <img src="./img/shortcut.svg" alt="" class="logo_provisional">
         <h1 id="bienvenido"></h1>
         <h2><span id="usuario"></span></h2>
         <button id="ask">Cómo te llamas?</button>
@@ -124,10 +138,6 @@
             <div>
                 <h4>"No es lo mismo ser experto en algo, que poder enseñar"</h4>
             </div>
-            
-            
-            
-            
         </div>
         <footer>
             <button id="ir_profes">Conoce a los profes aquí</button>

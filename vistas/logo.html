@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background: #000;
+        }
+        .bombillo{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: #ff0;
+            z-index: 10;
+        }
+        .zocalo{
+            width: 90px;
+            height: 120px;
+            border-radius: 10px 10px 50px 50px;
+            background: #666;
+            position: absolute;
+            top: 55%;
+            z-index: 8;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="contenedor">
+            <div class="bombillo"></div>
+            <div class="zocalo"></div>
+        </div>
+    </center>
+</body>
+</html>
