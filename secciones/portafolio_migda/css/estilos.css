@@ -191,10 +191,14 @@ details, .story > p, .libros > p, ul{
     .foto{
         width: 40%;
     }
+    .sobremi{
+        margin-top: 11%;
+    }
 }
 @media screen and (max-width: 600px) and (min-width: 300px) {
     .sobremi{
         width: 75%;
+        margin-top: 20%;
     }
 }
 @media screen and (max-width:500px) and (min-width:100px) {
@@ -203,7 +207,7 @@ details, .story > p, .libros > p, ul{
     }
     .sobremi{
         width: 85%;
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .botones-modal-enlaces{
         flex-direction: column;
@@ -214,9 +218,9 @@ details, .story > p, .libros > p, ul{
     }
     aside{
         flex-direction: row;
-        top:12%;
-        right: 40%;
-        z-index: -10;
+        position: relative;
+        width: 100%;
+        justify-content: center;
     }
     aside > a{
         margin: 5%;
@@ -227,11 +231,14 @@ details, .story > p, .libros > p, ul{
         width: 45%;
     }
     .sobremi{
-        margin-top: 25%;
+        margin-top: 15%;
+    }
+    aside{
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width:350px) and (min-width:100px) {
     .sobremi{
-        margin-top: 30%;
+        margin-top: 20%;
     }
 }
