@@ -14,8 +14,8 @@ body{
 }
 .foto{
     border-radius: 50%;
-    width: 25%;
-    height: 150px;
+    width: 30%;
+    height: 200px;
 }
 aside{
     display: flex;
