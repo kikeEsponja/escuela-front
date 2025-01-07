@@ -26,3 +26,10 @@ aside a{
     flex-wrap: wrap;
     justify-content: center;
 }
+.card{
+    margin: 1%;
+    box-shadow: 0 0 10px #00000080;
+}
+.card-text{
+    text-align: justify;
+}
