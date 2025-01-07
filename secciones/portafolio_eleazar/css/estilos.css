@@ -15,3 +15,14 @@ aside{
 aside a{
     margin: 10%;
 }
+.tecnologias > div{
+    width: 90%;
+}
+.tecnologias > div > h3{
+    text-align: justify;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
