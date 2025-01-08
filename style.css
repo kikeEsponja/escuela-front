@@ -134,15 +134,15 @@ img{
     border: 2px solid black;
     border-radius: 10px;
     height: 400px;
-    width: 500px;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #fff;
 }
 .mantenimiento_imagen{
-    width: 60%;
-    height: 60%;
+    width: 18%;
+    height: 40%;
     animation:alternate alternate 5s infinite;
 }
 @keyframes alternate{
@@ -156,6 +156,11 @@ img{
 @media(max-width: 1000px){
     .info{
         height: 100%;
+    }
+}
+@media(max-width: 800px){
+    .mantenimiento_imagen{
+        height: 32%;
     }
 }
 @media(max-width: 600px){
@@ -176,6 +181,9 @@ img{
     .image_track > img{
         animation: movimiento 20s linear infinite;
     }
+    .mantenimiento_imagen{
+        width: 30%;
+    }
     @keyframes movimiento {
         0% {
             transform: translateX(0);
@@ -183,5 +191,10 @@ img{
         100% {
             transform: translateX(-600%); /* Se mueve solo la mitad de la tira */
         }
+    }
+}
+@media(max-width: 400px){
+    .mantenimiento_imagen{
+        height: 24%;
     }
 }
