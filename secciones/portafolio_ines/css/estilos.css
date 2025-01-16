@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: linear-gradient(#615231, #2e20ac);
+}
+.logo{
+    border-radius: 50%;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    padding: inherit;
+}
+aside{
+    position: fixed;
+    display: flex;
+}
+aside a{
+    margin: 10%;
+}
+.tecnologias > div{
+    width: 90%;
+}
+.tecnologias > div > h3{
+    text-align: justify;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 1%;
+    box-shadow: 0 0 10px #00000080;
+}
+.card-text{
+    text-align: justify;
+}

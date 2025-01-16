@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/shortcut.svg" type="image/x-icon">
+    <title>Escuela</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RY5FL7SP9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-6RY5FL7SP9');
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Agenda tu Turno</h1>
+        <label for="horario">Horario:</label>
+        <!--<iframe src="https://calendar.google.com/calendar/" style="border: 0" width="100%" height="700" frameborder="0"></iframe>-->
+        <br>
+        <h2>Actualmente, esta sección está en mantenimiento.</h2>
+        <div class="mantenimiento">
+            <img src="https://th.bing.com/th/id/OIP.91VMhDEJ9Sp2SC7SE_bswAHaHW?pid=ImgDet&h=180&dpr=1,1" alt="" class="mantenimiento_imagen">
+        </div>
+        <div class="salir">
+            <button id="salir">Salir</button>
+            <button id="volver">Volver</button>
+        </div>
+        <footer>
+            <!--<p>ir a <a href="./admin.html">administración</a></p>-->
+            <p>sitio de kikeEsponja</p>
+            <p>element3999@gmail.com</p>
+        </footer>    
+    </center>
+    <script>
+        let volver = document.getElementById('volver');
+        volver.addEventListener('click', () =>{
+            window.history.back();
+        });
+
+        let salir = document.getElementById('salir');
+        salir.addEventListener('click', ()=>{
+            localStorage.removeItem('nombreUsuario');
+            window.location.href = '../index.html'
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

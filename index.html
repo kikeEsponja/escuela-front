@@ -13,6 +13,11 @@
         .logo_provisional{
             width: 8%;
             animation:alternate alternate 5s infinite;
+            transition: filter 300ms;
+        }
+        .logo_provisional:hover {
+            filter: drop-shadow(0 0 5em #e42b2baa);
+            cursor: pointer;
         }
         @keyframes alternate{
             0%{
