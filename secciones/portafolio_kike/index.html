@@ -169,6 +169,11 @@
                       <ul>
                         <a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
                         <a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+                        <a href="https://talently.tech/certification/be0c3ff1-5a01-4c3d-aad7-520bfe877e5e" target="_blank"><li>Javascript Certification</li></a>
+                        <a href="https://talently.tech/certification/132f6849-99f0-4b83-ba15-9d6339206228" target="_blank"><li>SQL Certification</li></a>
+                        <a href="https://talently.tech/certification/f5491132-3129-4d76-aa33-2c187afa4b7f" target="_blank"><li>nodeJs Certification</li></a>
+                        <a href="https://talently.tech/certification/21ad2c6d-1d71-4246-b7c0-c0d7d41ab40f" target="_blank"><li>PHP Certification</li></a>
+                        
                       </ul>
                     </div>
                     <div class="modal-footer">
@@ -400,6 +405,7 @@
           		<li class="bi bi-mailbox"> correo: element3999@gmail.com</li>
           		<a href="#inicio" class="btn btn-warning"><li>volver arriba</li></a>
               <button class="btn btn-warning" id="volver">Volver</button>
+              <button class="btn btn-warning" id="main">Página principal</button>
         	</ul>
     	</div>
     </footer>
@@ -566,6 +572,11 @@
       volver.addEventListener('click', ()=>{
         window.history.back();
       });
+
+      const pagPrincipal = document.getElementById('main');
+		    pagPrincipal.addEventListener('click', () => {
+			  window.location.href = '../../vistas/profes.html';
+		  });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

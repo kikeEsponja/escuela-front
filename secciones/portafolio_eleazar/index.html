@@ -130,7 +130,6 @@
 					<ul>
 						<a href="./html/historia.html"><li>Mi historia</li></a></li>
 						<a href="./html/estudios.html"><li>Información académica</li></a>
-						<a href="./html/libros.html"><li>Mis manuscritos</li></a>
 					</ul>
 				</div>
 			</div>
@@ -158,8 +157,7 @@
 						</div>
 						<div class="modal-body text-dark certificados">
 							<ul>
-								<a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
-								<a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+								<a href="../default.html" target="_blank"><li>English Certification</li></a>
 							</ul>
 						</div>
 						<div class="modal-footer">
@@ -316,6 +314,7 @@
 					<li class="bi bi-mailbox"> correo: eleazaroreyesc@gmail.com</li>
 					<a href="#inicio" class="btn btn-warning"><li>volver arriba</li></a>
 				  	<button class="btn btn-warning" id="volver">Volver</button>
+					<button class="btn btn-warning" id="main">Página principal</button>
 				</ul>
 			</div>
 		</footer>
@@ -327,6 +326,11 @@
       	volver.addEventListener('click', ()=>{
         	window.history.back();
       	});
+
+		const pagPrincipal = document.getElementById('main');
+		pagPrincipal.addEventListener('click', () => {
+			window.location.href = '../../vistas/profes.html';
+		})
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

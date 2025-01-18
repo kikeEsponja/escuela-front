@@ -90,3 +90,8 @@ function actualizarFrase(){
 }
 actualizarFrase();
 setInterval(actualizarFrase, 5000);*/
+
+const pagPrincipal = document.getElementById('main');
+pagPrincipal.addEventListener('click', () => {
+  window.location.href = '../../vistas/profes.html';
+});
