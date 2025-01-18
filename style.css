@@ -68,10 +68,11 @@ button:hover {
     display: flex;
     justify-content: center;
     transition: 0.3s ease transform;
+    font-size: 25px;
 }
 .aqui:hover{
-    transform: scale(1.1);
-    transform: rotate(-360deg);
+    transform: scale(1.6);
+    /*transform: rotate(-360deg);*/
 }
 section{
     display: flex;

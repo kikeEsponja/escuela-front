@@ -135,6 +135,7 @@
             <p>element3999@gmail.com</p>
             <!--<p>Conoce a los profes <a href="./profes.html">aquí</a></p>-->
             <button id="volver">Volver</button>
+            <button id="main">Página principal</button>
         </footer>
     </center>
     <script>
@@ -186,6 +187,11 @@
         volver.addEventListener('click', ()=>{
             window.history.back();
         });
+
+        const pagPrincipal = document.getElementById('main');
+        pagPrincipal.addEventListener('click', () => {
+            window.location.href = '../index.html';
+        })
     </script>
     <!--<script src="../script.js"></script>-->
 </body>
