@@ -233,6 +233,9 @@ h2{
     .mantenimiento_imagen{
         width: 30%;
     }
+    .contenedor-hero h1{
+        font-size: 4rem;
+    }
     @keyframes movimiento {
         0% {
             transform: translateX(0);
@@ -245,5 +248,8 @@ h2{
 @media(max-width: 400px){
     .mantenimiento_imagen{
         height: 24%;
+    }
+    .contenedor-hero h1{
+        font-size: 2.5rem;
     }
 }
