@@ -40,36 +40,25 @@
 </head>
 <body>
     <center>
-        <img src="./img/shortcut.svg" alt="" class="logo_provisional">
-        <h1 id="bienvenido"></h1>
-        <h2><span id="usuario"></span></h2>
-        <button id="ask">Cómo te llamas?</button>
+        <div class="contenedor-hero">
+            <div class="hero">
+                <div class="contenedor-elementos">
+                    <img src="./img/shortcut.svg" alt="" class="logo_provisional">
+                    <h1 id="bienvenido"></h1>
+                    <h2><span id="usuario"></span></h2>
+                    <button id="ask" class="aqui">Cómo te llamas?</button>
+                    <br>
+                    <div id="razon">
+                        <p>Haz click en el botón para agendar tu clase</p>
+                        <button id="ir_materias" class="aqui">Agendar</button>
+                    </div>
+                    <!--<div class="razon" id="razon">
+                        <h3>Por razones técnicas, están suspendidas las clases hasta nuevo aviso</h3>
+                    </div>-->
+                </div>
+            </div>
+        </div>
         <br>
-        <p id="razon">Haz click <a href="./vistas/materias.html" class="aqui">aquí</a> para agendar tu clase</p>
-        <!--<div class="razon" id="razon">
-            <h3>Por razones técnicas, están suspendidas las clases hasta nuevo aviso</h3>
-        </div>-->
-        <br>
-        <!--<section>
-            <div>
-                <img src="./img/wllp1.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/wllp2.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/wllp3.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/wllp3.png" alt="">
-            </div>
-            <div>
-                <img src="./img/mysql.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/java.jpg" alt="">
-            </div>
-        </section>-->
 
         <section>
             <div class="image_track">
@@ -111,24 +100,6 @@
             </div>
         </section>
 
-        <!--<section class="seccion_tlf">
-            <div class="image-track">
-                <img src="./img/wllp1.jpg" alt="">
-                <img src="./img/wllp2.jpg" alt="">
-                <img src="./img/wllp3.jpg" alt="">
-                <img src="./img/wllp3.png" alt="">
-                <img src="./img/mysql.jpg" alt="">
-                <img src="./img/java.jpg" alt="">
-
-                <img src="./img/wllp1.jpg" alt="">
-                <img src="./img/wllp2.jpg" alt="">
-                <img src="./img/wllp3.jpg" alt="">
-                <img src="./img/wllp3.png" alt="">
-                <img src="./img/mysql.jpg" alt="">
-                <img src="./img/java.jpg" alt="">
-            </div>
-        </section>-->
-
         <hr>
         <div class="info">
             <div>
@@ -163,8 +134,9 @@
             let ask = document.getElementById('ask');
             ask.style.display = 'none';
             let razon = document.getElementById('razon');
-            razon.style.display = 'block';
-            salir.style.display = 'block';
+            razon.style.display = 'flex';
+            salir.style.display = 'flex';
+            salir.style.justifyContent = 'center';
             bienvenido.textContent = '';
         }else{
             let ask = document.getElementById('ask');
@@ -175,9 +147,10 @@
                     localStorage.setItem('nombreUsuario', saludo);
                     bienvenido.textContent = '';
                     document.getElementById('usuario').textContent = 'Hola, ' + saludo;
-                    document.getElementById('razon').style.display = 'block';
+                    document.getElementById('razon').style.display = 'flex';
                     ask.style.display = 'none';
-                    salir.style.display = 'block';
+                    salir.style.display = 'flex';
+                    salir.style.justifyContent = 'center';
                 }
             });
         }
@@ -191,6 +164,11 @@
         irProfes.addEventListener('click', ()=>{
             window.location.href = './vistas/profes.html'
         })
+
+        const irMaterias = document.getElementById('ir_materias');
+        irMaterias.addEventListener('click', ()=>{
+            window.location.href = './vistas/materias.html'
+        });
     </script>
     <!--<script src="./script.js"></script>-->
 </body>

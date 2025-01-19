@@ -69,9 +69,10 @@ button:hover {
     justify-content: center;
     transition: 0.3s ease transform;
     font-size: 25px;
+    width: 50%;
 }
 .aqui:hover{
-    transform: scale(1.6);
+    transform: scale(0.95);
     /*transform: rotate(-360deg);*/
 }
 section{
@@ -145,6 +146,53 @@ img{
     width: 18%;
     height: 40%;
     animation:alternate alternate 5s infinite;
+}
+/*imagen HERO*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background: url('./img/hero3.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+  /* Contenido dentro del HERO */
+.contenedor-hero h1{
+    text-align: center;
+    /*font-size: 55px;*/
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #74ca51, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Esto hace que el texto tome el gradiente */
+    animation: shine 5s infinite linear;
+}
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: 1000px;
+    }
+}
+.contenedor-elementos{
+    margin: 0.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#razon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 @keyframes alternate{
     0%{
