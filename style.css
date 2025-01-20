@@ -258,10 +258,4 @@ h2{
     .contenedor-hero h1{
         font-size: 2.5rem;
     }
-    .hero {
-        background: url('./img/hero_tlf4.jpg') no-repeat center center/cover;
-    }
-    .aqui{
-        width: 75%;
-    }
 }
