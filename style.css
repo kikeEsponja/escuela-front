@@ -233,6 +233,12 @@ h2{
     .mantenimiento_imagen{
         width: 30%;
     }
+    .hero {
+        background: url('./img/hero_tlf4.jpg') no-repeat center center/cover;
+    }
+    .aqui{
+        width: 75%;
+    }
     .contenedor-hero h1{
         font-size: 4rem;
     }
