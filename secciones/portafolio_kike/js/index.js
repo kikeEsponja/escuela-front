@@ -90,3 +90,19 @@ function actualizarFrase(){
 }
 actualizarFrase();
 setInterval(actualizarFrase, 5000);
+
+//TEMA OSCURO
+document.addEventListener('DOMContentLoaded', ()=>{
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || "light";
+
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    themeToggle.textContent = currentTheme === 'dark' ? '🌞' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        themeToggle.textContent = newTheme === 'dark' ? '🌞' : '🌙';
+        localStorage.setItem('theme', newTheme);
+    });
+});

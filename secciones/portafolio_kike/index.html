@@ -52,6 +52,8 @@
               </li>
             </ul>
           </div>
+          <button id="theme-toggle" class="btn btn-secondary"> 🌞 </button>
+
         </div>
       </nav>
     </header>
@@ -577,6 +579,36 @@
 		    pagPrincipal.addEventListener('click', () => {
 			  window.location.href = '../../vistas/profes.html';
 		  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.from('.logo', { opacity:0, y: -50, duration: 1, ease: 'bounce'});
+        gsap.from('h1', { opacity:0, x: -100, duration: 1.5, delay: 0.5});
+      });
+        /*gsap.from('.sobremi', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
+        gsap.from('.tecnologias', {duration: 1, x: 100, opacity: 0, ease: 'bounce'});
+        gsap.from('.sobremi-texto', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
+        gsap.from('.botones-modal-enlaces', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
+        gsap.from('.card-container', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
+        gsap.from('.carrusel', {duration: 1, x: 100, opacity: 0, ease: 'bounce'});
+        gsap.from('.formulario', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
+        gsap.from('.tusclases', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
+        gsap.from('footer', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});*/
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        //ScrollReveal().reveal('.sobremi', {delay: 500});
+        //ScrollReveal().reveal('.tecnologias', {delay: 500});
+        //ScrollReveal().reveal('.sobremi-texto', {delay: 500});
+        ScrollReveal().reveal('.botones-modal-enlaces', {delay: 500});
+        ScrollReveal().reveal('.card-container .card', {duration: 1000, origin: 'right', distance: '100px', interval: 200});
+        ScrollReveal().reveal('.carrusel', {delay: 500});
+        ScrollReveal().reveal('.formulario', {delay: 500});
+        //ScrollReveal().reveal('.tusclases', {delay: 500});
+        ScrollReveal().reveal('footer', {delay: 500});
+      });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

@@ -159,12 +159,12 @@ img{
     text-align: center;
     color: #fff;
 }
-h2{
+/*h2{
     font-size: 40px;
     font-weight: 600;
-}
+}*/
   /* Contenido dentro del HERO */
-.contenedor-hero h1{
+.contenedor-hero h1, .contenedor-hero h2{
     text-align: center;
     /*font-size: 55px;*/
     font-size: 5rem;
@@ -194,6 +194,7 @@ h2{
     flex-direction: column;
     align-items: flex-end;
 }
+
 @keyframes alternate{
     0%{
         transform: rotate(0deg);

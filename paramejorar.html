@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="./img/webprog.jpg" width="7%"> E.A.B.C</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="./img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/indexen.html"><img src="./img/flag-england.svg" style="width: 50px; height: 50px;"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="presentacion" id="inicio">        	
+        <div class="sobremi">
+            <h1>Enrique Alejandro Barreto Cortéz</h1>
+        <div class="tecnologias">
+
+            <div>
+              <p class="bi bi-filetype-js filetype"> javaScript</p>
+              <div class="loader-container">
+                <div class="loader js"></div>
+                <span class="percentage" id="percentage-js">0%</span>
+              </div>
+            </div>
+
+        </div>
+            <h3>Soy desarrollador Front-end <span class="desaparece">con más de 3 años de experiencia en proyectos con metodologías agiles, apasionado por la tecnología, orientado a la mejora continua, constante aprendizaje y crecimiento profesional</span>. Actualmente manejo tecnologías como <span id="tech"></span> y estoy tomando capacitaciones en <span id="cursos"></span> para sumar a mis habilidades.</h3>
+        </div>
+        <div class="sobremi-texto">
+          <h3 id="frases"></h3>
+          <h3></h3>
+        </div>
+
+        <div class="botones-modal-enlaces">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Enlaces
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Certificados
+            </button>
+        </div>
+
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body text-dark">
+                <ul>
+                  <li><a href="./html/historia.html">Mi historia</a></li>
+                  <li><a href="./html/estudios.html">Información académica</a></li>
+                  <li><a href="./html/libros.html">Mis manuscritos</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Certificados</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
+                        <a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+                        <a href="https://talently.tech/certification/be0c3ff1-5a01-4c3d-aad7-520bfe877e5e" target="_blank"><li>Javascript Certification</li></a>
+                        <a href="https://talently.tech/certification/132f6849-99f0-4b83-ba15-9d6339206228" target="_blank"><li>SQL Certification</li></a>
+                        <a href="https://talently.tech/certification/f5491132-3129-4d76-aa33-2c187afa4b7f" target="_blank"><li>nodeJs Certification</li></a>
+                        <a href="https://talently.tech/certification/21ad2c6d-1d71-4246-b7c0-c0d7d41ab40f" target="_blank"><li>PHP Certification</li></a>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Información Personal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <li>Nombre: Enrique Alejandro Gregorio Barreto Cortéz</li>
+                        <li>Edad: 41 años</li>
+                        <li>Género: Masculino</li>
+                        <li>Título: Licenciado en administración industrial</li>
+                        <li>Ocupación: Desarrollador Web</li>
+                        <li>Ubicación: Argentina, Buenos Aires, Lanús</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-center">Mis Trabajos</h2>
+        <div class="card-container">
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/jueguito.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Un jueguito</h5>
+                  <p class="card-text">Experimento con Scratch de un jueguito tipo Galaga.</p>
+                  <a href="../portafolio_kike/html/des/index.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/rueda.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Rueda</h5>
+                  <p class="card-text">Experimento con CSS probando animaciones.</p>
+                  <a href="./html/rueda.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/ciudad.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Ciudad</h5>
+                  <p class="card-text">Panorámica de una ciudad hecha con boxes de CSS.</p>
+                  <a href="./html/ciudad.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/pinguino.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Pinguino</h5>
+                  <p class="card-text">Pinguino que saluda, hecho con cariño y mucho CSS.</p>
+                  <a href="./html/pinguino.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="carrusel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="espacioUno">
+                  <div>
+                      <img src="img/html.png" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <div>
+                      <img src="img/css.webp" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <div>
+                      <img src="img/js.jpeg" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">Más Información</button>
+          </div>
+    </section>
+
+    <aside class="text-primary">
+    	<a target="_blank" href="https://wa.me/+5491131844709?text=Hola,%20estoy%20interesado%20en%20contactarte."><i class="bi bi-whatsapp"></i><!--<img src="ruta/a/tu/imagen/whatsapp.png" alt="WhatsApp">--></a>
+      	<a href="http://linkedin.com/in/enrique-barreto-749077265" target="_blank"><i class="bi bi-linkedin"></i></a>
+      	<a href="https://www.instagram.com/kike.esponja/" target="_blank"><i class="bi bi-instagram"></i></a>
+      	<a href="https://www.facebook.com/profile.php?id=61552678348869" target="_blank"><i class="bi bi-facebook"></i></a>
+      	<a href="https://www.youtube.com/channel/UCM_7tBVCY5EQtmoK66QOEQw" target="_blank"><i class="bi bi-youtube"></i></a>
+    </aside>
+
+    <div class="formulario">
+      <form action="./html/mensaje.php" method="POST" id="formulario">
+        <h3>Contáctate conmigo.</h3>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required>
+        <label for="telefono">teléfono</label>
+        <input type="tel" name="telefono" id="telefono" required>
+        <label for="mensaje">Deja un mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+    <footer>
+      	<div id="contacto">
+        	<ul class="text-center">
+              	<a class="btn btn-success" target="_blank" href="https://www.classgap.com/me/enrique-barreto-770886">ClassGap</a>
+          		<li class="bi bi-phone"> teléfono: +541131844709</li>
+          		<li class="bi bi-mailbox"> correo: element3999@gmail.com</li>
+          		<a href="#inicio" class="btn btn-warning"><li>volver arriba</li></a>
+              <button class="btn btn-warning" id="volver">Volver</button>
+              <button class="btn btn-warning" id="main">Página principal</button>
+        	</ul>
+    	</div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script>
+      let percentageElementJs = document.getElementById("percentage-js");
+      let percentageJs = 0;
+
+      function increasePercentageJs() {
+        if (percentageJs <= 75) {
+          percentageElementJs.innerText = percentageJs + "%";
+          percentageJs++;
+        }
+      }
+
+      let intervalJs = setInterval(() => {
+        increasePercentageJs();
+        if (percentageJs > 75) {
+          clearInterval(intervalJs); // Detener cuando llegue al 100%
+        }
+      }, 19);
+    </script>
+</body>
+</html>
