@@ -348,9 +348,9 @@ details, .story > p, .libros > p, ul{
     }
 }
 @media screen and (max-width:794px) and (min-width: 300px) {
-    .sobremi-texto{
-        /*sheight: 600px;*/
-    }
+    /*.sobremi-texto{
+        /*sheight: 600px;
+    }*/
 }
 @media screen and (max-width: 699px) and (min-width: 300px) {
     .presentacion{
