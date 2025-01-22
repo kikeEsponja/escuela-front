@@ -106,3 +106,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
         localStorage.setItem('theme', newTheme);
     });
 });
+
+// INGLÉS Y ESPAÑOL
+const eng = document.getElementById('eng');
+const esp = document.getElementById('esp');
+
+if(eng){
+    eng.addEventListener('click', ()=>{
+        window.location.href = './html/indexen.html';
+    });
+}
+
+if(esp){
+    esp.addEventListener('click', ()=>{
+        window.location.href = '../index.html';
+    });
+};

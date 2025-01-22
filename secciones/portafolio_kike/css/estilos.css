@@ -1,5 +1,4 @@
 
-
 *{
     margin:0;
     padding: 0;
@@ -114,19 +113,23 @@ nav{
     background: #c8b700;
 }
 .navbar-nav{
-    display: contents;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav > li{
+    margin: 1%;
 }
 .logo{
     border-radius: 50%;
     font-size: 30px;
     font-weight: 600;
 }
-.presentacion{
-    background: url("/img/enriquesvg.svg");
+/*.presentacion{
+    background: url("../img/enriquesvg.svg");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right top;
-}
+}*/
 .botones-modal-enlaces{
     display:flex;
     width: 30%;
@@ -205,7 +208,7 @@ nav{
     width: 160px;
     height: 142px; 
     background: #666; 
-    border-radius: 0 30px;
+    border-radius: 6px;
     margin: 1%;
 }
 .filetype{
@@ -374,6 +377,9 @@ details, .story > p, .libros > p, ul{
         /*top: 8rem;
         height: 400px;*/
         display: none;
+    }
+    h1{
+        margin-top: 2rem;
     }
 }
 @media(max-width: 414px){

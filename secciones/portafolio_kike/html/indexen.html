@@ -24,7 +24,17 @@
   		gtag('config', 'G-MEVYD2D6H7');
 	</script>
   <style>
-
+    .eng, .esp, .claroscuro{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .eng{
+      background: url('../img/flag-england.svg');
+    }
+    .esp{
+      background: url('../img/flag-spain.svg');
+    }
   </style>
     <title>Portfolio</title>
 </head>
@@ -32,7 +42,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="../img/webprog.jpg" width="7%"> E.A.B.C (kikeEsponja) </a>
+          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="../img/webprog.jpg" width="7%"> E.A.B.C <span class="kikeesponja">(kikeEsponja)</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,17 +54,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contact</a>
               </li>
+              <!--<li class="nav-item">
+                <button class="eng" id="eng"></button>
+                <small>español</small>
+              </li>-->
               <li class="nav-item">
-                <a class="nav-link" href="../index.html"><img src="../img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
-                <small>spanish</small>
+                <button class="esp" id="esp"></button>
+                <!--<small>inglés</small>-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="../img/flag-england.svg" style="width: 50px; height: 50px;"></a>
-                <small>english</small>
+                <button id="theme-toggle" class="claroscuro bg-secondary"> 🌞 </button>
+                <!--<small>claro/oscuro</small>-->
               </li>
             </ul>
           </div>
-          <button id="theme-toggle" class="btn btn-secondary"> 🌞 </button>
 
         </div>
       </nav>
@@ -434,7 +447,7 @@
 		}(window, document, 'script', 'https://d13nnzzfr74buh.cloudfront.net/widget-reviews_jq.min.js?v=748'));
 	</script>
 	<!-- End Widget -->
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
     <script>
       let percentageElementBootstrap = document.getElementById("percentage-bootstrap");
       let percentageBootstrap = 0;
@@ -588,27 +601,14 @@
         gsap.from('.logo', { opacity:0, y: -50, duration: 1, ease: 'bounce'});
         gsap.from('h1', { opacity:0, x: -100, duration: 1.5, delay: 0.5});
       });
-        /*gsap.from('.sobremi', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
-        gsap.from('.tecnologias', {duration: 1, x: 100, opacity: 0, ease: 'bounce'});
-        gsap.from('.sobremi-texto', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
-        gsap.from('.botones-modal-enlaces', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
-        gsap.from('.card-container', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
-        gsap.from('.carrusel', {duration: 1, x: 100, opacity: 0, ease: 'bounce'});
-        gsap.from('.formulario', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});
-        gsap.from('.tusclases', {duration: 1, x: -100, opacity: 0, ease: 'bounce'});
-        gsap.from('footer', {duration: 1, y: 100, opacity: 0, ease: 'bounce'});*/
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        //ScrollReveal().reveal('.sobremi', {delay: 500});
-        //ScrollReveal().reveal('.tecnologias', {delay: 500});
-        //ScrollReveal().reveal('.sobremi-texto', {delay: 500});
         ScrollReveal().reveal('.botones-modal-enlaces', {delay: 500});
         ScrollReveal().reveal('.card-container .card', {duration: 1000, origin: 'right', distance: '100px', interval: 200});
         ScrollReveal().reveal('.carrusel', {delay: 500});
         ScrollReveal().reveal('.formulario', {delay: 500});
-        //ScrollReveal().reveal('.tusclases', {delay: 500});
         ScrollReveal().reveal('footer', {delay: 500});
       });
     </script>
