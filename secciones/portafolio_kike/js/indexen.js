@@ -58,26 +58,27 @@ actualizarCursos();
 
 setInterval(actualizarCursos, 3000);
 
-var frases = document.getElementById('frases');
+// FRASES CÉLEBRES EN INGLÉS
+var frasesEng = document.getElementById('frases-eng');
 
-const arreglo = ['"The art of victory comes from defeats", Simón Bolivar.',
-'"If you think you can, then you can. If you hink you cannot, then you can not. In both cases, you are right.", Henry Ford.',
-'"Worse than failling is not trying to do anything.", Franklin D. Roosvelt.', 
-'"It is madness to hate all roses because one of them hurt you, and to give up all your dreams because one of them did not come true.", El principito',
-'"There is no tailwind for those who do not know where to go.", Séneca'];
+const arregloEng = ['"To learn how to win, one must first know defeat.", Simón Bolivar.',
+    '"Whether you think you can or think you can not, you are right.", Henry Ford.',
+    '"The only thing worse than failing is not trying at all.", Franklin D. Roosvelt.', 
+    '"It is madness to hate all roses just because one of them pricked you.", El principito',
+    '"There are no favorable winds for those who do not know their destination.", Séneca'];
 
-function aleatoria(){
-    return arreglo[Math.floor(Math.random() * arreglo.length)];
-}
-
-function actualizarFrase(){
-    frases.style.opacity = 0;
-    setTimeout(function(){
-        frases.innerHTML = aleatoria();
-        frases.style.opacity = 1;
-    }, 
-    500
-    );
-}
-actualizarFrase();
-setInterval(actualizarFrase, 5000);
+    function aleatoriaEng(){
+        return arregloEng[Math.floor(Math.random() * arregloEng.length)];
+    }
+    
+    function actualizarFraseEng(){
+        frasesEng.style.opacity = 0;
+        setTimeout(function(){
+            frasesEng.innerHTML = aleatoriaEng();
+            frasesEng.style.opacity = 1;
+        }, 
+        500
+        );
+    }
+    actualizarFraseEng();
+    setInterval(actualizarFraseEng, 5000);

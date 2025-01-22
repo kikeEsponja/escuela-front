@@ -79,17 +79,47 @@ function aleatoria(){
     return arreglo[Math.floor(Math.random() * arreglo.length)];
 }
 
-function actualizarFrase(){
-    frases.style.opacity = 0;
-    setTimeout(function(){
-        frases.innerHTML = aleatoria();
-        frases.style.opacity = 1;
-    }, 
-    500
-    );
+if(frases){
+    function actualizarFrase(){
+        frases.style.opacity = 0;
+        setTimeout(function(){
+            frases.innerHTML = aleatoria();
+            frases.style.opacity = 1;
+        }, 
+        500
+        );
+    }
+    actualizarFrase();
+    setInterval(actualizarFrase, 5000);
 }
-actualizarFrase();
-setInterval(actualizarFrase, 5000);
+
+// FRASES CÉLEBRES EN INGLÉS
+var frasesEng = document.getElementById('frases-eng');
+
+const arregloEng = ['"To learn how to win, one must first know defeat.", Simón Bolivar.',
+    '"Whether you think you can or think you can not, you are right.", Henry Ford.',
+    '"The only thing worse than failing is not trying at all.", Franklin D. Roosvelt.', 
+    '"It is madness to hate all roses just because one of them pricked you.", El principito',
+    '"There are no favorable winds for those who do not know their destination.", Séneca'];
+
+if(frasesEng){
+    function aleatoriaEng(){
+        return arregloEng[Math.floor(Math.random() * arregloEng.length)];
+    }
+    
+    function actualizarFraseEng(){
+        frasesEng.style.opacity = 0;
+        setTimeout(function(){
+            frasesEng.innerHTML = aleatoriaEng();
+            frasesEng.style.opacity = 1;
+        }, 
+        500
+        );
+    }
+    actualizarFraseEng();
+    setInterval(actualizarFraseEng, 5000);
+}
+
 
 //TEMA OSCURO
 document.addEventListener('DOMContentLoaded', ()=>{
