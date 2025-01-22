@@ -152,3 +152,36 @@ if(esp){
         window.location.href = '../index.html';
     });
 };
+
+// REPOSITORIOS
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const username = 'kikeEsponja';
+    const repoContainer = document.getElementById('repos-container');
+
+    try{
+        const response = await fetch(`https://api.github.com/users/${username}/repos`);
+        const repos = await response.json();
+
+        const toRepos = repos
+        .filter(repo => !repo.fork)
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 6);
+
+        toRepos.forEach(repo => {
+            const repoCard = document.createElement('div');
+            repoCard.classList.add('repo-card');
+
+            repoCard.innerHTML = `
+            <h3>${repo.name}</h3>
+            <p>${repo.description || "No description available"}</p>
+            <a href="${repo.html_url}" target="_blank">Ver repositorio</a>
+            `;
+
+            repoContainer.appendChild(repoCard);
+        });
+    }catch (error){
+        console.error("error fetching repos", error);
+        repoContainer.innerHTML = "<p>Hubo un error al cargar los repositorios. Por favor, intente más tarde.</p>";
+    }
+});
