@@ -207,9 +207,53 @@ nav{
     border: solid black 3px; 
     width: 160px;
     height: 142px; 
-    background: #666; 
+    /*background: #666; */
     border-radius: 6px;
     margin: 1%;
+    transition: 0.3s ease-in-out transform;
+}
+.tecnologias > div:hover{
+    transform: scale(1.05);
+}
+.bg-bootstrap{
+    background: url('../img/colores-bootstrap-5.png');
+    background-size: cover;
+    background-position: center;
+}
+.bg-css{
+    background: url('../img/css.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.bg-html{
+    background: url('../img/html5.webp');
+    background-size: cover;
+    background-position: center;
+}
+.bg-java{
+    background: url('../img/java.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.bg-js{
+    background: url('../img/javascript.png');
+    background-size: cover;
+    background-position: center;
+}
+.bg-php{
+    background: url('../img/php.webp');
+    background-size: cover;
+    background-position: center;
+}
+.bg-py{
+    background: url('../img/python.webp');
+    background-size: cover;
+    background-position: center;
+}
+.bg-sql{
+    background: url('../img/sql.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 .filetype{
     font-size: 25px;
