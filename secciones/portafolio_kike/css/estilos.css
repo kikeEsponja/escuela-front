@@ -427,6 +427,9 @@ details, .story > p, .libros > p, ul{
         top: 35rem;
         /*height: 200px;*/
     }
+    .formulario{
+        width: 75%;
+    }
 }
 @media screen and (max-width:794px) and (min-width: 300px) {
     /*.sobremi-texto{
@@ -458,6 +461,12 @@ details, .story > p, .libros > p, ul{
     }
     h1{
         margin-top: 2rem;
+    }
+    .img-carrusel{
+        width: 100%;
+    }
+    .formulario{
+        width: 90%;
     }
 }
 @media(max-width: 414px){
