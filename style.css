@@ -100,12 +100,12 @@ img{
 .solo_tlf{
     display: none;
 }
-.salir{
+/*.salir{
     position: fixed;
     top: 50px;
     display: flex;
     width: 30%;
-}
+}*/
 .info{
     display: flex;
     align-items: center;
@@ -193,6 +193,20 @@ img{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.tarifas{
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tarifas > button{
+    margin: 1%;
+    width: 150px;
 }
 
 @keyframes alternate{
