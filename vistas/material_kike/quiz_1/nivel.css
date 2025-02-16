@@ -1,0 +1,71 @@
+body{
+    background: initial;
+}
+img{
+    width: 15%;
+}
+img:hover{
+    width: 60%;
+    transition: 1s ease-in;
+}
+.practicando{
+	text-decoration: underline;
+}
+.aqui{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #f00;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.aqui:hover{
+    width: 100px;
+    height: 100px;
+	transition: 1s ease-in;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background: url('../imagenes_quiz/mouse_pointer.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+/*h2{
+    font-size: 40px;
+    font-weight: 600;
+}*/
+  /* Contenido dentro del HERO */
+.contenedor-hero h1, .contenedor-hero h2{
+    text-align: center;
+    /*font-size: 55px;*/
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #74ca51, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Esto hace que el texto tome el gradiente */
+    animation: shine 5s infinite linear;
+}
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: 1000px;
+    }
+}
+.contenedor-elementos{
+    margin: 0.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
