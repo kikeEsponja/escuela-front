@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Enrique Alejandro Gregorio Barreto Cortez">
     <meta name="description" content="portafolio">
-    <link rel="shortcut icon" href="../../img/meta_favicon.png">
+    <link rel="shortcut icon" href="./img/logoparami2.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
@@ -23,315 +23,598 @@
 
   		gtag('config', 'G-MEVYD2D6H7');
 	</script>
+  <style>
+    .eng, .esp, .claroscuro{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .eng{
+      background: url('./img/flag-england.svg');
+    }
+    .esp{
+      background: url('./img/flag-spain.svg');
+    }
+  </style>
     <title>Portafolio</title>
 </head>
 <body>
     <header>
-    	<nav class="navbar navbar-expand-lg">
-    		<div class="container-fluid">
-    			<a class="navbar-brand logo text-light" href="#"><img class="logo" src="../../img/meta_logo.png" width="7%"> INÉS MARÍA CORTEZ</a>
-    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    				<span class="navbar-toggler-icon"></span>
-    			</button>
-    			<div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
-    		    <ul class="navbar-nav">
-    		    	<li class="nav-item">
-    					<a class="nav-link active text-light" aria-current="page" href="#">inicio</a>
-    		    	</li>
-    		    	<li class="nav-item">
-    					<a class="nav-link text-light" href="#contacto">Contacto</a>
-    		    	</li>
-    		    	<li class="nav-item">
-    					<a class="nav-link" href="#"><img src="./img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
-    		    	</li>
-    		    	<li class="nav-item">
-    					<a class="nav-link" href="./html/indexen.html"><img src="./img/flag-england.svg" style="width: 50px; height: 50px;"></a>
-    		    	</li>
-    		    </ul>
-    		  </div>
-    		</div>
-    	</nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="./img/webprog.jpg" width="7%"> E.A.B.C <span class="kikeesponja">(kikeEsponja)</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <button class="eng" id="eng"></button>
+                <!--<small>español</small>-->
+              </li>
+              <!--<li class="nav-item">
+                <button class="esp" id="esp"></button>
+                <small>inglés</small>
+              </li>-->
+              <li class="nav-item">
+                <button id="theme-toggle" class="claroscuro bg-secondary"> 🌞 </button>
+                <!--<small>claro/oscuro</small>-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-	<center>
-		<section class="presentacion" id="inicio">        	
-			<div class="sobremi">
-				<h1>Inés María Cortez</h1>
-			</div>
-			<div class="tecnologias">
-				<!--<div>
-					<p class="bi bi-file filetype"> Inglés</p>
-					<div class="loader-container">
-					<div class="loader bootstrap"></div>
-						<span class="percentage" id="percentage-bootstrap">0%</span>
-					</div>
-				</div>
-	
-			  	<div>
-					<p class="bi bi-filetype-css filetype"> Traducción</p>
-					<div class="loader-container">
-					  <div class="loader css"></div>
-					  <span class="percentage" id="percentage-css">0%</span>
-					</div>
-			  	</div>
-	
-				<div>
-					<p class="bi bi-filetype-html filetype"> Español</p>
-					<div class="loader-container">
-						<div class="loader html"></div>
-						  <span class="percentage" id="percentage-html">0%</span>
-					</div>
-				</div>
-	
-				<div>
-				  <p class="bi bi-filetype-java filetype"> Rumano</p>
-					<div class="loader-container">
-						<div class="loader java"></div>
-						<span class="percentage" id="percentage-java">0%</span>
-					  </div>
-				</div>
-	
-				<div>
-					<p class="bi bi-filetype-js filetype"> Alemán</p>
-					  <div class="loader-container">
-						<div class="loader js"></div>
-						<span class="percentage" id="percentage-js">0%</span>
-					  </div>
-				</div>
-	
-				<div>
-				  <p class="bi bi-filetype-php filetype"> Francés</p>
-					<div class="loader-container">
-						<div class="loader php"></div>
-						<span class="percentage" id="percentage-php">0%</span>
-					  </div>
-				</div>-->
-	
-				<div>
-					<h3>Soy diseñadora de alta costura con más de 50 años de experiencia en el área. He dictado cursos de costura en varios países con resultados extraordinarios.</h3>
-				</div>
-				<!--<div class="sobremi-texto">
-					<h3 id="frases"></h3>
-					<h3></h3>
-				</div>-->
-	
-				<div class="botones-modal-enlaces">	
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						Certificados
-					</button>
-					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-						Enlaces
-					</button>
-				</div>
-			</div>
-			<div class="collapse w-50" id="collapseExample">
-				<div class="card card-body">
-					<ul>
-						<a href="./html/historia.html"><li>Mi historia</li></a></li>
-						<a href="./html/estudios.html"><li>Información académica</li></a>
-					</ul>
-				</div>
-			</div>
-		</section>
-			<!-- ENLACES -->
-			<!--<div style="min-height: 120px;">
-				<div class="collapse collapse-horizontal" id="collapseWidthExample">
-					<div class="card card-body text-dark w-50">
-						<ul>
-							<a href="./html/historia.html"><li>Mi historia</li></a></li>
-							<a href="./html/estudios.html"><li>Información académica</li></a>
-							<a href="./html/libros.html"><li>Mis manuscritos</li></a>
-						</ul>
-					</div>
-				</div>
-			</div>-->
-			
-			<!-- MODAL -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Certificados</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body text-dark certificados">
-							<ul>
-								<a href="../default.html" target="_blank"><li>Certificado de la orden celestial de los 72 ángeles de la cábala.</li></a>
-								<a href="../default.html" target="_blank"><li>IMPRE Abogado</li></a>
-							</ul>
-						</div>
-						<div class="modal-footer">
-							<!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-							<!--<button type="button" class="btn btn-primary">Aceptar</button>-->
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<!-- MODAL DOS -->
-			<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Información Personal</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body text-dark certificados">
-							<ul>
-								<li>Nombre: Inés María Cortéz</li>
-								<li>Edad: 72 años</li>
-								<li>Género: Femenino</li>
-								<li>Título: Abogado</li>
-								<li>Ocupación: Empleado en (costura)</li>
-								<li>Ubicación: Argentina</li>
-							</ul>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							<!--<button type="button" class="btn btn-primary">Aceptar</button>-->
-						</div>
-					</div>
-				</div>
-			</div>
-	
-		<!-- TRABAJOS -->
-		<section>
-			<h2 class="text-center">Mi Trayectoria</h2>
-			<div class="card-container">
-				<div class="card" style="width: 15rem;">
-					<img src="../../img/costura.jpeg" class="card-img-top" alt="..." style="height: 50%;">
-					<div class="card-body">
-						<h5 class="card-title text-dark">MIRARES</h5>
-						<p class="card-text text-dark">Más de 10 años de trayectoria impartiendo clases de costura y confección, Aunado a mis habilidades en derecho, siento una gran pasión por el mundo textil y me he dedicado a compartir ese sentimiento con cualquier persona que esté interesada y dispuesta a aprender este bello arte.</p>
-						<!--<a href="#" class="btn btn-primary" target="_blank">Visitar</a>-->
-					</div>
-				</div>
+    <section class="presentacion" id="inicio">        	
+        <div class="sobremi">
+          <h1>Enrique Alejandro Barreto Cortéz</h1>
+          <div class="tecnologias">
 
-				<div class="card" style="width: 15rem;">
-					<img src="../../img/costura.jpeg" class="card-img-top" alt="Una imagen q va a quedar aquí" style="height: 50%;">
-					<div class="card-body">
-						<h5 class="card-title text-dark">Empresa XXX</h5>
-						<p class="card-text text-dark">Enseñanza de costura y confección en varios niveles.</p>
-						<!--<a href="#" class="btn btn-primary" target="_blank">Visitar</a>-->
-					</div>
-				</div>
+            <div class="bg-bootstrap techs">
+              <p class="bi bi-file filetype"> Bootstrap</p>
+              <div class="loader-container">
+                <!--<div class="loader bootstrap"></div>-->
+                <!--<span class="percentage" id="percentage-bootstrap">0%</span>-->
+              </div>
+            </div>
 
-				<div class="card" style="width: 15rem;">
-					<img src="../../img/costura.jpeg" class="card-img-top" alt="Una imagen q va a quedar aquí" style="height: 50%;">
-					<div class="card-body">
-						<h5 class="card-title text-dark">Empresa XXX</h5>
-						<p class="card-text text-dark">Enseñanza de costura y confección en varios niveles..</p>
-						<!--<a href="#" class="btn btn-primary" target="_blank">Visitar</a>-->
-					</div>
-				</div>
-				  
-			</div>
-		</section>
-		<br>
-	
-		<!-- CARRUSEL -->
-		<!--<section class="carrusel">
-			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<div class="espacioUno">
-						  <div class="textoUno">
-							<h2>Hacemos realidad la transformación empresarial</h2>
-							<p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización</p>
-						  </div>-->
-					  <!--<div>
-						  <img src="img/html.png" class="img-carrusel">
-					  </div>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<div class="espacioUno">
-						  <div class="textoUno">
-							<h2>"Excelencia Tecnológica: Líderes indiscutibles en desarrollo de software"</h2>
-							<p>trabajamos en base a una estrategia incremental elaborada bajo distintas metodologías y marcos de trabajo ágil, dependiendo de la naturaleza de cada proyecto.</p>
-						  </div>
-					  <div>
-						  <img src="img/css.webp" class="img-carrusel">
-					  </div>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<div class="espacioUno">
-					  <div class="textoUno">
-						  <h2>"Expertos en creación de sitios web y mobile: Somos la elección adecuada para Ti"</h2>
-						  <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización.</p>
-					  </div>
-					  <div>
-						  <img src="img/js.jpeg" class="img-carrusel">
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Next</span>
-				</button>
-			  </div>
+            <div class="bg-css techs">
+              <p class="bi bi-filetype-css filetype"> CSS</p>
+              <div class="loader-container">
+                <!--<div class="loader css"></div>-->
+                <!--<span class="percentage" id="percentage-css">0%</span>-->
+              </div>
+            </div>
 
-		</section>-->
+            <div class="bg-html techs">
+                <p class="bi bi-filetype-html filetype"> HTML</p>
+                <div class="loader-container">
+                  <!--<div class="loader html"></div>-->
+                  <!--<span class="percentage" id="percentage-html">0%</span>-->
+                </div>
+            </div>
 
-		<div>
-			<button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">Más Información</button>
-		</div>
+            <div class="bg-java techs">
+              <p class="bi bi-filetype-java filetype"> Java</p>
+              <div class="loader-container">
+                <!--<div class="loader java"></div>-->
+                <!--<span class="percentage" id="percentage-java">0%</span>-->
+              </div>
+            </div>
 
-		<aside class="text-primary">
-			<a target="_blank" href="https://wa.me/+5491171468060?text=Hola,%20estoy%20interesado%20en%20contactarte."><i class="bi bi-whatsapp"></i><!--<img src="ruta/a/tu/imagen/whatsapp.png" alt="WhatsApp">--></a>
-			<!--<a href="http://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>-->
-			<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-			<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-			<!--<a href="#" target="_blank"><i class="bi bi-youtube"></i></a>-->
-		</aside>
-	
-		<!--<div class="formulario">
-			<form action="./html/mensaje.php" method="POST" id="formulario">
-				<h3>Contáctate conmigo.</h3>
-				<br>
-				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre" id="nombre" required>
-				<label for="correo">Correo</label>
-				<input type="email" name="correo" id="correo" required>
-				<label for="telefono">teléfono</label>
-				<input type="tel" name="telefono" id="telefono" required>
-				<label for="mensaje">Deja un mensaje</label>
-				<textarea id="mensaje" name="mensaje"></textarea>
-				<button type="submit" class="btn btn-success">Enviar</button>
-			</form>
-		</div>-->
-		
-		<footer>
-			<div id="contacto">
-				<ul class="text-center">
-					<li class="bi bi-phone"> teléfono:+5491171468060</li>
-					<li class="bi bi-mailbox"> correo: inescortezdebarreto@gmail.com</li>
-					<a href="#inicio" class="btn btn-warning"><li>volver arriba</li></a>
-				  	<button class="btn btn-warning" id="volver">Volver</button>
-					  <button class="btn btn-warning" id="main">Página principal</button>
-				</ul>
-			</div>
-		</footer>
-	</center>
+            <div class="bg-js techs">
+              <p class="bi bi-filetype-js filetype"> javaScript</p>
+              <div class="loader-container">
+                <!--<div class="loader js"></div>-->
+                <!--<span class="percentage" id="percentage-js">0%</span>-->
+              </div>
+            </div>
 
+            <div class="bg-php techs">
+              <p class="bi bi-filetype-php filetype"> PHP</p>
+              <div class="loader-container">
+                <!--<div class="loader php"></div>-->
+                <!--<span class="percentage" id="percentage-php">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-py techs">
+              <p class="bi bi-filetype-py filetype"> Python</p>
+              <div class="loader-container">
+                <!--<div class="loader py"></div>-->
+                <!--<span class="percentage" id="percentage-py">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-sql techs">
+              <p class="bi bi-filetype-sql filetype"> SQL</p>
+              <div class="loader-container">
+                <!--<div class="loader sql"></div>-->
+                <!--<span class="percentage" id="percentage-sql">0%</span>-->
+              </div>
+            </div>
+            <h3>Soy desarrollador Front-end <span class="desaparece">con más de 3 años de experiencia en proyectos con metodologías agiles, apasionado por la tecnología, orientado a la mejora continua, constante aprendizaje y crecimiento profesional</span>. Actualmente manejo tecnologías como <span id="tech"></span> y estoy tomando capacitaciones en <span id="cursos"></span> para sumar a mis habilidades.</h3>
+          </div>
+        </div>
+        <div class="sobremi-texto">
+          <h3 id="frases"></h3>
+          <h3></h3>
+        </div>
+
+        <div class="botones-modal-enlaces">
+          <!-- Button trigger enlaces -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Enlaces
+            </button>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Certificados
+          </button>
+        </div>
+
+        <!-- ENLACES -->
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body text-dark">
+                <ul>
+                  <li><a href="./html/historia.html">Mi historia</a></li>
+                  <li><a href="./html/estudios.html">Información académica</a></li>
+                  <li><a href="./html/libros.html">Mis manuscritos</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Certificados</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
+                        <a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+                        <a href="https://talently.tech/certification/be0c3ff1-5a01-4c3d-aad7-520bfe877e5e" target="_blank"><li>Javascript Certification</li></a>
+                        <a href="https://talently.tech/certification/132f6849-99f0-4b83-ba15-9d6339206228" target="_blank"><li>SQL Certification</li></a>
+                        <a href="https://talently.tech/certification/f5491132-3129-4d76-aa33-2c187afa4b7f" target="_blank"><li>nodeJs Certification</li></a>
+                        <a href="https://talently.tech/certification/21ad2c6d-1d71-4246-b7c0-c0d7d41ab40f" target="_blank"><li>PHP Certification</li></a>
+                        
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                        <!--<button type="button" class="btn btn-primary">Aceptar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DOS -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Información Personal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <li>Nombre: Enrique Alejandro Gregorio Barreto Cortéz</li>
+                        <li>Edad: 41 años</li>
+                        <li>Género: Masculino</li>
+                        <li>Título: Licenciado en administración industrial</li>
+                        <li>Ocupación: Desarrollador Web</li>
+                        <li>Ubicación: Argentina, Buenos Aires</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <!--<button type="button" class="btn btn-primary">Aceptar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section>
+        <h2 class="text-center">Mis Trabajos</h2>
+        <div class="card-container">
+              <!--<div class="card" style="width: 14rem;">
+                <img src="./img/logoazul.svg" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Mi trabajo actual</h5>
+                  <p class="card-text text-dark">Junto a un equipo de vanguardia, se desarrolló esta publicidad para fortrain evolution inc.</p>
+                  <a href="https://fortrainevolution.com/" class="btn btn-primary" target="_blank">Visitar</a>
+                  <a href="http://fortrainevolution.leeresmipasion.com/" class="btn btn-primary" target="_blank">Visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/leeresmipasion.png" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Leer es mi pasión</h5>
+                  <p class="card-text text-dark">Sitio web para leer libros en formato PDF, parte de mi capacitación como Back-end.</p>
+                  <a href="https://leeresmipasion.com" class="btn btn-primary" target="_blank">Visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/cocina.png" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Cocinar es mi pasión</h5>
+                  <p class="card-text text-dark">Sitio web para leer recetas de cocina, parte de mi capacitación como Back-end y profundizar en mongoDb.</p>
+                  <a href="http://cocina.leeresmipasion.com" class="btn btn-primary" target="_blank">Visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/ranking.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Administración</h5>
+                  <p class="card-text">Aplicación de uso interno para instructores. Construida con PHP como incursión en dicho lenguaje para probar el fucionamiento con servidores Apache.</p>
+                  <a href="http://kiosco.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>
+        
+              <div class="card" style="width: 14rem;">
+                <img src="./img/inventario.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Ventas</h5>
+                  <p class="card-text">Aplicación de uso interno para ventas. Construida con PHP para uso interno de inventario que puede recibir datos desde documento de texto y emitir ticket de venta.</p>
+                  <a href="http://qa.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/prologic.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Curso</h5>
+                  <p class="card-text">Pequeño curso introductorio de desarrollo web en forma de videos.</p>
+                  <a href="./html/ejercicios.html" class="btn btn-primary" target="_blank">visitar (local)</a>
+                  <a href="https://prologic.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar (online)</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>-->
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/jueguito.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Un jueguito</h5>
+                  <p class="card-text">Experimento con Scratch de un jueguito tipo Galaga.</p>
+                  <a href="./html/des/index.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/rueda.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Rueda</h5>
+                  <p class="card-text">Experimento con CSS probando animaciones.</p>
+                  <a href="./html/rueda.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/ciudad.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Ciudad</h5>
+                  <p class="card-text">Panorámica de una ciudad hecha con boxes de CSS.</p>
+                  <a href="./html/ciudad.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="./img/pinguino.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Pinguino</h5>
+                  <p class="card-text">Pinguino que saluda, hecho con cariño y mucho CSS.</p>
+                  <a href="./html/pinguino.html" class="btn btn-primary" target="_blank">visitar</a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <br>
+
+    <section id="repositorios" class="repositorios">
+      <h2 class="text-center">Mis repositorios destacados</h2>
+      <div class="repos-container" id="repos-container"></div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section class="carrusel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>Hacemos realidad la transformación empresarial</h2>
+                      <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización</p>
+                  </div>-->
+                  <div>
+                      <img src="img/html.png" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>"Excelencia Tecnológica: Líderes indiscutibles en desarrollo de software"</h2>
+                      <p>trabajamos en base a una estrategia incremental elaborada bajo distintas metodologías y marcos de trabajo ágil, dependiendo de la naturaleza de cada proyecto.</p>
+                  </div>-->
+                  <div>
+                      <img src="img/css.webp" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>"Expertos en creación de sitios web y mobile: Somos la elección adecuada para Ti"</h2>
+                      <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización.</p>
+                  </div>-->
+                  <div>
+                      <img src="img/js.jpeg" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">More Information</button>
+          </div>
+    </section>
+
+    <aside class="text-primary">
+    	<a target="_blank" href="https://wa.me/+5491131844709?text=Hola,%20estoy%20interesado%20en%20contactarte."><i class="bi bi-whatsapp"></i><!--<img src="ruta/a/tu/imagen/whatsapp.png" alt="WhatsApp">--></a>
+      	<a href="http://linkedin.com/in/enrique-barreto-749077265" target="_blank"><i class="bi bi-linkedin"></i></a>
+      	<a href="https://www.instagram.com/kike.esponja/" target="_blank"><i class="bi bi-instagram"></i></a>
+      	<a href="https://www.facebook.com/profile.php?id=61552678348869" target="_blank"><i class="bi bi-facebook"></i></a>
+      	<a href="https://www.youtube.com/channel/UCM_7tBVCY5EQtmoK66QOEQw" target="_blank"><i class="bi bi-youtube"></i></a>
+    </aside>
+
+    <div class="formulario">
+      <form action="./html/mensaje.php" method="POST" id="formulario">
+        <h3>Contáctate conmigo.</h3>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required>
+        <label for="telefono">teléfono</label>
+        <input type="tel" name="telefono" id="telefono" required>
+        <label for="mensaje">Deja un mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+
+  	<div class="tusclases">
+    	<div id="my_tutor_widget" data-tutor="enrique-barreto2865333" data-domain="https://www.tusclases.com.ar" data-cdn="https://d13nnzzfr74buh.cloudfront.net/" data-css-version="760">
+   			<a href="https://www.tusclases.com.ar" target="_blank"><img src="https://d13nnzzfr74buh.cloudfront.net/i/logo_tusclases_v3@2x.png" width="100" height="38" alt="Clases particulares" /></a>
+		  </div>
+      <div id="my_tutor_reviews_widget" data-tutor="enrique-barreto2865333" data-domain="https://www.tusclases.com.ar" data-cdn="https://d13nnzzfr74buh.cloudfront.net/" data-css-version="760">
+   			<a href="https://www.tusclases.com.ar" target="_blank"><img src="https://d13nnzzfr74buh.cloudfront.net/i/logo_tusclases_v3@2x.png" width="100" height="38" alt="Clases particulares" /></a>
+		  </div>
+  	</div>
+    <footer>
+      	<div id="contacto">
+        	<ul class="text-center">
+              	<a class="btn btn-success" target="_blank" href="https://www.classgap.com/me/enrique-barreto-770886">ClassGap</a>
+          		<li class="bi bi-phone"> teléfono: +541131844709</li>
+          		<li class="bi bi-mailbox"> correo: element3999@gmail.com</li>
+          		<a href="#inicio" class="btn btn-warning"><li>volver arriba</li></a>
+              <button class="btn btn-warning" id="volver">Volver</button>
+              <!--<button class="btn btn-warning" id="main">Página principal</button>-->
+        	</ul>
+    	</div>
+    </footer>
+  	<!-- Tusclases Booking v.1.0.1. Copy this code and paste in your HTML -->
+	<script>
+		(function (i, s, o, g, a, m){
+    		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    		a.async = 1;
+    		a.src = g;
+    		m.parentNode.insertBefore(a, m)
+		}(window, document, 'script', 'https://d13nnzzfr74buh.cloudfront.net/widget_jq.min.js?v=748'));
+	</script>
+	<!-- End Widget -->
+  	
+  	<!-- Tusclases Reviews v.1.0.1. Copy this code and paste in your HTML -->
+	<script>
+		(function (i, s, o, g, a, m){
+    		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    		a.async = 1;
+    		a.src = g;
+    		m.parentNode.insertBefore(a, m)
+		}(window, document, 'script', 'https://d13nnzzfr74buh.cloudfront.net/widget-reviews_jq.min.js?v=748'));
+	</script>
+	<!-- End Widget -->
     <script src="./js/index.js"></script>
     <script>
-      	const volver = document.getElementById('volver');
-      	volver.addEventListener('click', ()=>{
-        	window.history.back();
-      	});
+      /*let percentageElementBootstrap = document.getElementById("percentage-bootstrap");
+      let percentageBootstrap = 0;
 
-		const pagPrincipal = document.getElementById('main');
-		pagPrincipal.addEventListener('click', () => {
-			window.location.href = '../../vistas/profes.html';
-		})
+      function increasePercentageBootstrap() {
+        if (percentageBootstrap <= 90) {
+          percentageElementBootstrap.innerText = percentageBootstrap + "%";
+          percentageBootstrap++;
+        }
+      }
+
+      let intervalBootstrap = setInterval(() => {
+        increasePercentageBootstrap();
+        if (percentageBootstrap > 90) {
+          clearInterval(intervalBootstrap); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementHtml = document.getElementById("percentage-html");
+      let percentageHtml = 0;
+
+      function increasePercentageHtml() {
+        if (percentageHtml <= 100) {
+          percentageElementHtml.innerText = percentageHtml + "%";
+          percentageHtml++;
+        }
+      }
+
+      let intervalHtml = setInterval(() => {
+        increasePercentageHtml();
+        if (percentageHtml > 100) {
+          clearInterval(intervalHtml); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementCss = document.getElementById("percentage-css");
+      let percentageCss = 0;
+
+      function increasePercentageCss() {
+        if (percentageCss <= 100) {
+          percentageElementCss.innerText = percentageCss + "%";
+          percentageCss++;
+        }
+      }
+
+      let intervalCss = setInterval(() => {
+        increasePercentageCss();
+        if (percentageCss > 100) {
+          clearInterval(intervalCss); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementJava = document.getElementById("percentage-java");
+      let percentageJava = 0;
+
+      function increasePercentageJava() {
+        if (percentageJava <= 30) {
+          percentageElementJava.innerText = percentageJava + "%";
+          percentageJava++;
+        }
+      }
+
+      let intervalJava = setInterval(() => {
+        increasePercentageJava();
+        if (percentageJava > 30) {
+          clearInterval(intervalJava); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementJs = document.getElementById("percentage-js");
+      let percentageJs = 0;
+
+      function increasePercentageJs() {
+        if (percentageJs <= 75) {
+          percentageElementJs.innerText = percentageJs + "%";
+          percentageJs++;
+        }
+      }
+
+      let intervalJs = setInterval(() => {
+        increasePercentageJs();
+        if (percentageJs > 75) {
+          clearInterval(intervalJs); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementPhp = document.getElementById("percentage-php");
+      let percentagePhp = 0;
+
+      function increasePercentagePhp() {
+        if (percentagePhp <= 50) {
+          percentageElementPhp.innerText = percentagePhp + "%";
+          percentagePhp++;
+        }
+      }
+
+      let intervalPhp = setInterval(() => {
+        increasePercentagePhp();
+        if (percentagePhp > 80) {
+          clearInterval(intervalPhp); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementPy = document.getElementById("percentage-py");
+      let percentagePy = 0;
+
+      function increasePercentagePy() {
+        if (percentagePy <= 30) {
+          percentageElementPy.innerText = percentagePy + "%";
+          percentagePy++;
+        }
+      }
+
+      let intervalPy = setInterval(() => {
+        increasePercentagePy();
+        if (percentagePy > 30) {
+          clearInterval(intervalPy); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementSql = document.getElementById("percentage-sql");
+      let percentageSql = 0;
+
+      function increasePercentageSql() {
+        if (percentageSql <= 25) {
+          percentageElementSql.innerText = percentageSql + "%";
+          percentageSql++;
+        }
+      }
+
+      let intervalSql = setInterval(() => {
+        increasePercentageSql();
+        if (percentageSql > 25) {
+          clearInterval(intervalSql); // Detener cuando llegue al 100%
+        }
+      }, 19);*/
+
+      const volver = document.getElementById('volver');
+      volver.addEventListener('click', ()=>{
+        window.history.back();
+      });
+
+      /*const pagPrincipal = document.getElementById('main');
+		    pagPrincipal.addEventListener('click', () => {
+			  window.location.href = '../../vistas/profes.html';
+		  });*/
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.from('.logo', { opacity:0, y: -50, duration: 1, ease: 'bounce'});
+        gsap.from('h1', { opacity:0, x: -100, duration: 1.5, delay: 0.5});
+      });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        ScrollReveal().reveal('.botones-modal-enlaces', {delay: 500});
+        ScrollReveal().reveal('.card-container .card', {duration: 1000, origin: 'right', distance: '100px', interval: 200});
+        ScrollReveal().reveal('.carrusel', {delay: 500});
+        ScrollReveal().reveal('.formulario', {delay: 500});
+        ScrollReveal().reveal('footer', {delay: 500});
+      });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

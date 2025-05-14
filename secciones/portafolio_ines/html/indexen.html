@@ -13,45 +13,142 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger Paint" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/estilos.css" type="text/css">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEVYD2D6H7"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-MEVYD2D6H7');
+	</script>
+  <style>
+    .eng, .esp, .claroscuro{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .eng{
+      background: url('../img/flag-england.svg');
+    }
+    .esp{
+      background: url('../img/flag-spain.svg');
+    }
+  </style>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="/img/webprog.jpg" width="7%"> E.A.B.C</a>
+          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="../img/webprog.jpg" width="7%"> E.A.B.C <span class="kikeesponja">(kikeEsponja)</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" href="#contacto">Contact</a>
+              </li>
+              <!--<li class="nav-item">
+                <button class="eng" id="eng"></button>
+                <small>español</small>
+              </li>-->
+              <li class="nav-item">
+                <button class="esp" id="esp"></button>
+                <!--<small>inglés</small>-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html"><img src="/img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="/img/flag-england.svg" style="width: 50px; height: 50px;"></a>
+                <button id="theme-toggle" class="claroscuro bg-secondary"> 🌞 </button>
+                <!--<small>claro/oscuro</small>-->
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
     </header>
 
-    <section class="presentacion">
+    <section class="presentacion" id="inicio">        	
         <div class="sobremi">
-            <h1 id="inicio">Enrique Alejandro Barreto Cortéz</h1>
-            <h3>I am a Front-end developer <span class="desaparece">with over three years of experience in projects using agile methodologies. I am passionate about technology, focused on continuous improvement, constant learning, and professional growth</span>. Currently, I work with technologies such as<span id="tech"></span> and I am undergoing in<span id="cursos"></span> to enhance my skills.</h3>
+            <h1>Enrique Alejandro Barreto Cortéz</h1>
+        <div class="tecnologias">
+
+          <div class="bg-bootstrap">
+            <p class="bi bi-file filetype"> Bootstrap</p>
+            <div class="loader-container">
+              <!--<div class="loader bootstrap"></div>-->
+              <!--<span class="percentage" id="percentage-bootstrap">0%</span>-->
+            </div>
+          </div>
+
+          <div class="bg-css">
+            <p class="bi bi-filetype-css filetype"> CSS</p>
+            <div class="loader-container">
+              <!--<div class="loader css"></div>-->
+              <!--<span class="percentage" id="percentage-css">0%</span>-->
+            </div>
+          </div>
+
+            <div class="bg-html">
+                <p class="bi bi-filetype-html filetype"> HTML</p>
+                <div class="loader-container">
+                  <!--<div class="loader html"></div>-->
+                  <!--<span class="percentage" id="percentage-html">0%</span>-->
+                </div>
+            </div>
+
+            <div class="bg-java">
+              <p class="bi bi-filetype-java filetype"> Java</p>
+              <div class="loader-container">
+                <!--<div class="loader java"></div>-->
+                <!--<span class="percentage" id="percentage-java">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-js">
+              <p class="bi bi-filetype-js filetype"> javaScript</p>
+              <div class="loader-container">
+                <!--<div class="loader js"></div>-->
+                <!--<span class="percentage" id="percentage-js">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-php">
+              <p class="bi bi-filetype-php filetype"> PHP</p>
+              <div class="loader-container">
+                <!--<div class="loader php"></div>-->
+                <!--<span class="percentage" id="percentage-php">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-py">
+              <p class="bi bi-filetype-py filetype"> Python</p>
+              <div class="loader-container">
+                <!--<div class="loader py"></div>-->
+                <!--<span class="percentage" id="percentage-py">0%</span>-->
+              </div>
+            </div>
+
+            <div class="bg-sql">
+              <p class="bi bi-filetype-sql filetype"> SQL</p>
+              <div class="loader-container">
+                <!--<div class="loader sql"></div>-->
+                <!--<span class="percentage" id="percentage-sql">0%</span>-->
+              </div>
+            </div>
+        </div>
+        <h3>I am a Front-end developer <span class="desaparece">with over three years of experience in projects using agile methodologies. I am passionate about technology, focused on continuous improvement, constant learning, and professional growth</span>. Currently, I work with technologies such as<span id="tech"></span> and I am undergoing in<span id="cursos"></span> to enhance my skills.</h3>
         </div>
         <div class="sobremi-texto">
-          <h3 id="frases"></h3>
+          <h3 id="frases-eng"></h3>
+          <h3></h3>
         </div>
+
         <div class="botones-modal-enlaces">
           <!-- Button trigger enlaces -->
             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
@@ -69,9 +166,9 @@
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
               <div class="card card-body text-dark">
                 <ul>
-                  <li><a href="/html/story.html">My story</a></li>
-                  <li><a href="/html/studies.html">Studies</a></li>
-                  <li><a href="/html/books.html">Books</a></li>
+                  <li><a href="./story.html">My story</a></li>
+                  <li><a href="./studies.html">Academic Information</a></li>
+                  <li><a href="../html/books.html">My books</a></li>
                 </ul>
               </div>
             </div>
@@ -89,6 +186,11 @@
                       <ul>
                         <a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
                         <a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+                        <a href="https://talently.tech/certification/be0c3ff1-5a01-4c3d-aad7-520bfe877e5e" target="_blank"><li>Javascript Certification</li></a>
+                        <a href="https://talently.tech/certification/132f6849-99f0-4b83-ba15-9d6339206228" target="_blank"><li>SQL Certification</li></a>
+                        <a href="https://talently.tech/certification/f5491132-3129-4d76-aa33-2c187afa4b7f" target="_blank"><li>nodeJs Certification</li></a>
+                        <a href="https://talently.tech/certification/21ad2c6d-1d71-4246-b7c0-c0d7d41ab40f" target="_blank"><li>PHP Certification</li></a>
+                        
                       </ul>
                     </div>
                     <div class="modal-footer">
@@ -112,9 +214,9 @@
                         <li>Name: Enrique Alejandro Gregorio Barreto Cortéz</li>
                         <li>Age: 41 years old</li>
                         <li>Gender: Male</li>
-                        <li>Degree: Administration</li>
+                        <li>Grade: Administration </li>
                         <li>Ocupation: Web Developer</li>
-                        <li>Location: Argentina, Buenos Aires, Lanús</li>
+                        <li>Location: Argentina, Buenos Aires</li>
                       </ul>
                     </div>
                     <div class="modal-footer">
@@ -124,181 +226,114 @@
                 </div>
             </div>
         </div>
-
-        <!-- TECNOLOGÍAS -->
-        <div class="tecnologias">
-          <h4>Technologies</h4>
-
-          <div>
-            <p class="bi bi-file filetype"> Bootstrap</p>
-              <div class="puntos">
-                <div class="t bg-success"></div>
-                <div class="t bg-success"></div>
-                <div class="t bg-success"></div>
-                <div class="t bg-success"></div>
-                <div class="t bg-success"></div>
-                <div class="t bg-info"></div> <!-- usar javascript -->
-              </div>
-          </div>
-
-          <div>
-            <p class="bi bi-filetype-css filetype"> CSS</p>
-            <div class="puntos">
-              <div class="t  bg-success"></div>
-              <div class="t  bg-success"></div>
-              <div class="t  bg-success"></div>
-              <div class="t  bg-success"></div>
-              <div class="t  bg-success"></div>
-              <div class="t  bg-success"></div> <!-- usar javascript -->
-            </div>
-          </div>
-
-            <div>
-                <p class="bi bi-filetype-html filetype"> HTML</p>
-                <div class="puntos">
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div> <!-- usar javascript -->
-                </div>
-            </div>
-
-            <div>
-              <p class="bi bi-filetype-java filetype"> Java</p>
-                <div class="puntos">
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-info"></div>
-                  <div class="t bg-warning"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                </div>
-            </div>
-
-            <div>
-              <p class="bi bi-filetype-js filetype"> javaScript</p>
-                <div class="puntos">
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-info"></div>
-                  <div class="t bg-warning"></div> <!-- usar javascript -->
-                </div>
-            </div>
-
-            <div>
-              <p class="bi bi-filetype-php filetype"> PHP</p>
-                <div class="puntos">
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-success"></div>
-                  <div class="t bg-info"></div>
-                  <div class="t bg-warning"></div>
-                  <div class="t bg-danger"></div>
-                </div>
-            </div>
-
-            <div>
-              <p class="bi bi-filetype-py filetype"> Python</p>
-                <div class="puntos">
-                  <div class="t bg-info"></div>
-                  <div class="t bg-warning"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                </div>
-            </div>
-
-            <div>
-              <p class="bi bi-filetype-sql filetype"> SQL</p>
-                <div class="puntos">
-                  <div class="t bg-success"></div>
-                  <div class="t bg-info"></div>
-                  <div class="t bg-warning"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                  <div class="t bg-danger"></div>
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <!-- TRABAJOS -->
     <section>
-        <h2 class="text-center">My jobs</h2>
+        <h2 class="text-center">My experience</h2>
         <div class="card-container">
-            <div class="card" style="width: 14rem;">
-                <img src="/img/logoazul.svg" class="card-img-top" alt="..." style="height: 50%;">
+              <!--<div class="card" style="width: 14rem;">
+                <img src="./img/logoazul.svg" class="card-img-top" alt="..." style="height: 50%;">
                 <div class="card-body">
-                  <h5 class="card-title text-dark">My current job</h5>
-                  <p class="card-text text-dark">I developed this website with a great team.</p>
-                  <a href="https://fortrainevolution.com/" class="btn btn-primary" target="_blank">Go to</a>
+                  <h5 class="card-title text-dark">Mi trabajo actual</h5>
+                  <p class="card-text text-dark">Junto a un equipo de vanguardia, se desarrolló esta publicidad para fortrain evolution inc.</p>
+                  <a href="https://fortrainevolution.com/" class="btn btn-primary" target="_blank">Visitar</a>
+                  <a href="http://fortrainevolution.leeresmipasion.com/" class="btn btn-primary" target="_blank">Visitar</a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/desweb.png" class="card-img-top" alt="..." style="height: 50%;">
+                <img src="./img/leeresmipasion.png" class="card-img-top" alt="..." style="height: 50%;">
                 <div class="card-body">
-                  <h5 class="card-title text-dark">Educative announce</h5>
-                  <p class="card-text text-dark">Advertisement for an introductory web development course designed for university students majoring in design.</p>
-                  <a href="https://ea5ee88b-db6b-4c24-b9ab-64ddfa4d3d3b-00-2vof8qcjsjag9.picard.replit.dev/" class="btn btn-primary" target="_blank">Go to</a>
+                  <h5 class="card-title text-dark">Leer es mi pasión</h5>
+                  <p class="card-text text-dark">Sitio web para leer libros en formato PDF, parte de mi capacitación como Back-end.</p>
+                  <a href="https://leeresmipasion.com" class="btn btn-primary" target="_blank">Visitar</a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/goal.png" class="card-img-top" alt="..." style="height: 50%;">
+                <img src="./img/cocina.png" class="card-img-top" alt="..." style="height: 50%;">
                 <div class="card-body">
-                  <h5 class="card-title text-dark">G.O.A.L.</h5>
-                  <p class="card-text text-dark">Building a personal project, is not complete but i am still working on it</p>
-                  <a href="https://qa.challengegoal.online/" class="btn btn-primary" target="_blank">Go to</a>
+                  <h5 class="card-title text-dark">Cocinar es mi pasión</h5>
+                  <p class="card-text text-dark">Sitio web para leer recetas de cocina, parte de mi capacitación como Back-end y profundizar en mongoDb.</p>
+                  <a href="http://cocina.leeresmipasion.com" class="btn btn-primary" target="_blank">Visitar</a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/curso.png" class="card-img-top" alt="...">
+                <img src="./img/ranking.png" class="card-img-top" alt="...">
                 <div class="card-body text-dark">
-                  <h5 class="card-title text-dark">Course</h5>
-                  <p class="card-text">Small web developing course for begginers.</p>
-                  <a href="/html/ejercicios.html" class="btn btn-primary" target="_blank">Go to</a>
+                  <h5 class="card-title text-dark">Administración</h5>
+                  <p class="card-text">Aplicación de uso interno para instructores. Construida con PHP como incursión en dicho lenguaje para probar el fucionamiento con servidores Apache.</p>
+                  <a href="http://kiosco.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>
+        
+              <div class="card" style="width: 14rem;">
+                <img src="./img/inventario.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Ventas</h5>
+                  <p class="card-text">Aplicación de uso interno para ventas. Construida con PHP para uso interno de inventario que puede recibir datos desde documento de texto y emitir ticket de venta.</p>
+                  <a href="http://qa.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar</a>
                   <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/rueda.png" class="card-img-top" alt="...">
+                <img src="./img/prologic.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Curso</h5>
+                  <p class="card-text">Pequeño curso introductorio de desarrollo web en forma de videos.</p>
+                  <a href="./html/ejercicios.html" class="btn btn-primary" target="_blank">visitar (local)</a>
+                  <a href="https://prologic.leeresmipasion.com/" class="btn btn-primary" target="_blank">visitar (online)</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>-->
+
+              <div class="card" style="width: 14rem;">
+                <img src="../img/jueguito.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">A little game</h5>
+                  <p class="card-text">Experiment with Scratch about a game like Galaga.</p>
+                  <a href="../portafolio_kike/html/des/index.html" class="btn btn-primary" target="_blank">visit</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="../img/rueda.png" class="card-img-top" alt="...">
                 <div class="card-body text-dark">
                   <h5 class="card-title text-dark">Wheel</h5>
-                  <p class="card-text">Making CSS animation experiments.</p>
-                  <a href="/html/rueda.html" class="btn btn-primary" target="_blank">Go to</a>
+                  <p class="card-text">Experiment with CSS and animation.</p>
+                  <a href="./html/rueda.html" class="btn btn-primary" target="_blank">visit</a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/ciudad.png" class="card-img-top" alt="...">
+                <img src="../img/ciudad.png" class="card-img-top" alt="...">
                 <div class="card-body text-dark">
                   <h5 class="card-title text-dark">City</h5>
-                  <p class="card-text">Making a city portrait with CSS.</p>
-                  <a href="/html/ciudad.html" class="btn btn-primary" target="_blank">Go to</a>
+                  <p class="card-text">A Panoramic city built with CSS boxes.</p>
+                  <a href="./html/ciudad.html" class="btn btn-primary" target="_blank">visit</a>
                 </div>
               </div>
 
               <div class="card" style="width: 14rem;">
-                <img src="/img/pinguino.png" class="card-img-top" alt="...">
+                <img src="../img/pinguino.png" class="card-img-top" alt="...">
                 <div class="card-body text-dark">
                   <h5 class="card-title text-dark">Penguin</h5>
-                  <p class="card-text">A cute penguin says "Hello! I am made with CSS".</p>
-                  <a href="/html/pinguino.html" class="btn btn-primary" target="_blank">Go to</a>
+                  <p class="card-text">A cute penguin saying hello with the hand, all made with love and a lot of CSS.</p>
+                  <a href="./html/pinguino.html" class="btn btn-primary" target="_blank">visit</a>
                 </div>
               </div>
         </div>
     </section>
     <br>
 
+    <section id="repositorios" class="repositorios">
+      <h2 class="text-center">My best repos</h2>
+      <div class="repos-container" id="repos-container"></div>
+    </section>
     <!-- CARRUSEL -->
     <section class="carrusel">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -310,7 +345,7 @@
                       <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización</p>
                   </div>-->
                   <div>
-                      <img src="/img/html.png" class="img-carrusel">
+                      <img src="../img/html.png" class="img-carrusel">
                   </div>
                 </div>
               </div>
@@ -321,7 +356,7 @@
                       <p>trabajamos en base a una estrategia incremental elaborada bajo distintas metodologías y marcos de trabajo ágil, dependiendo de la naturaleza de cada proyecto.</p>
                   </div>-->
                   <div>
-                      <img src="/img/css.webp" class="img-carrusel">
+                      <img src="../img/css.webp" class="img-carrusel">
                   </div>
                 </div>
               </div>
@@ -332,7 +367,7 @@
                       <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización.</p>
                   </div>-->
                   <div>
-                      <img src="/img/js.jpeg" class="img-carrusel">
+                      <img src="../img/js.jpeg" class="img-carrusel">
                   </div>
                 </div>
               </div>
@@ -347,44 +382,240 @@
             </button>
           </div>
           <div>
-            <button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">More Information</button>
+            <button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">Más Información</button>
           </div>
     </section>
 
     <aside class="text-primary">
-      <a href="http://linkedin.com/in/enrique-barreto-749077265" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www.instagram.com/kike.esponja/"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61552678348869" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.youtube.com/channel/UCM_7tBVCY5EQtmoK66QOEQw" target="_blank"><i class="bi bi-youtube"></i></a>
+    	<a target="_blank" href="https://wa.me/+5491131844709?text=Hola,%20estoy%20interesado%20en%20contactarte."><i class="bi bi-whatsapp"></i><!--<img src="ruta/a/tu/imagen/whatsapp.png" alt="WhatsApp">--></a>
+      	<a href="http://linkedin.com/in/enrique-barreto-749077265" target="_blank"><i class="bi bi-linkedin"></i></a>
+      	<a href="https://www.instagram.com/kike.esponja/" target="_blank"><i class="bi bi-instagram"></i></a>
+      	<a href="https://www.facebook.com/profile.php?id=61552678348869" target="_blank"><i class="bi bi-facebook"></i></a>
+      	<a href="https://www.youtube.com/channel/UCM_7tBVCY5EQtmoK66QOEQw" target="_blank"><i class="bi bi-youtube"></i></a>
     </aside>
 
     <div class="formulario">
-      <form action="/html/mensaje.php" method="POST">
-        <h3>Contact.</h3>
+      <form action="./html/mensaje.php" method="POST" id="formulario">
+        <h3>Contatc.</h3>
         <br>
         <label for="nombre">Name</label>
         <input type="text" name="nombre" id="nombre" required>
-        <label for="mail">E-mail</label>
-        <input type="email" name="mail" id="mail" required>
+        <label for="correo">E-mail</label>
+        <input type="email" name="correo" id="correo" required>
         <label for="telefono">Phone</label>
         <input type="tel" name="telefono" id="telefono" required>
-        <label for="mensaje">Let a menssage</label>
+        <label for="mensaje">Message</label>
         <textarea id="mensaje" name="mensaje"></textarea>
         <button type="submit" class="btn btn-success">Send</button>
       </form>
     </div>
 
+  	<div class="tusclases">
+    	<div id="my_tutor_widget" data-tutor="enrique-barreto2865333" data-domain="https://www.tusclases.com.ar" data-cdn="https://d13nnzzfr74buh.cloudfront.net/" data-css-version="760">
+   			<a href="https://www.tusclases.com.ar" target="_blank"><img src="https://d13nnzzfr74buh.cloudfront.net/i/logo_tusclases_v3@2x.png" width="100" height="38" alt="Clases particulares" /></a>
+		  </div>
+      <div id="my_tutor_reviews_widget" data-tutor="enrique-barreto2865333" data-domain="https://www.tusclases.com.ar" data-cdn="https://d13nnzzfr74buh.cloudfront.net/" data-css-version="760">
+   			<a href="https://www.tusclases.com.ar" target="_blank"><img src="https://d13nnzzfr74buh.cloudfront.net/i/logo_tusclases_v3@2x.png" width="100" height="38" alt="Clases particulares" /></a>
+		  </div>
+  	</div>
     <footer>
-      <div id="contacto">
-        <ul class="text-center">
-          <li class="bi bi-phone"> phone: 1131844709</li>
-          <li class="bi bi-mailbox"> e-mail: element3999@gmail.com</li>
-          <a href="#inicio" class="btn btn-warning"><li>Back to top</li></a>
-        </ul>
-      </div>
+      	<div id="contacto">
+        	<ul class="text-center">
+              	<a class="btn btn-success" target="_blank" href="https://www.classgap.com/me/enrique-barreto-770886">ClassGap</a>
+          		<li class="bi bi-phone"> Phone: +541131844709</li>
+          		<li class="bi bi-mailbox"> e-mail: element3999@gmail.com</li>
+          		<a href="#inicio" class="btn btn-warning"><li>Back to top</li></a>
+              <button class="btn btn-warning" id="volver">Go Back</button>
+              <button class="btn btn-warning" id="main">Home</button>
+        	</ul>
+    	</div>
     </footer>
+  	<!-- Tusclases Booking v.1.0.1. Copy this code and paste in your HTML -->
+	<script>
+		(function (i, s, o, g, a, m){
+    		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    		a.async = 1;
+    		a.src = g;
+    		m.parentNode.insertBefore(a, m)
+		}(window, document, 'script', 'https://d13nnzzfr74buh.cloudfront.net/widget_jq.min.js?v=748'));
+	</script>
+	<!-- End Widget -->
+  	
+  	<!-- Tusclases Reviews v.1.0.1. Copy this code and paste in your HTML -->
+	<script>
+		(function (i, s, o, g, a, m){
+    		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    		a.async = 1;
+    		a.src = g;
+    		m.parentNode.insertBefore(a, m)
+		}(window, document, 'script', 'https://d13nnzzfr74buh.cloudfront.net/widget-reviews_jq.min.js?v=748'));
+	</script>
+	<!-- End Widget -->
+    <script src="../js/index.js"></script>
+    <script>
+      let percentageElementBootstrap = document.getElementById("percentage-bootstrap");
+      let percentageBootstrap = 0;
 
-    <script src="/js/indexen.js"></script>
+      function increasePercentageBootstrap() {
+        if (percentageBootstrap <= 90) {
+          percentageElementBootstrap.innerText = percentageBootstrap + "%";
+          percentageBootstrap++;
+        }
+      }
+
+      let intervalBootstrap = setInterval(() => {
+        increasePercentageBootstrap();
+        if (percentageBootstrap > 90) {
+          clearInterval(intervalBootstrap); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementHtml = document.getElementById("percentage-html");
+      let percentageHtml = 0;
+
+      function increasePercentageHtml() {
+        if (percentageHtml <= 100) {
+          percentageElementHtml.innerText = percentageHtml + "%";
+          percentageHtml++;
+        }
+      }
+
+      let intervalHtml = setInterval(() => {
+        increasePercentageHtml();
+        if (percentageHtml > 100) {
+          clearInterval(intervalHtml); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementCss = document.getElementById("percentage-css");
+      let percentageCss = 0;
+
+      function increasePercentageCss() {
+        if (percentageCss <= 100) {
+          percentageElementCss.innerText = percentageCss + "%";
+          percentageCss++;
+        }
+      }
+
+      let intervalCss = setInterval(() => {
+        increasePercentageCss();
+        if (percentageCss > 100) {
+          clearInterval(intervalCss); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementJava = document.getElementById("percentage-java");
+      let percentageJava = 0;
+
+      function increasePercentageJava() {
+        if (percentageJava <= 30) {
+          percentageElementJava.innerText = percentageJava + "%";
+          percentageJava++;
+        }
+      }
+
+      let intervalJava = setInterval(() => {
+        increasePercentageJava();
+        if (percentageJava > 30) {
+          clearInterval(intervalJava); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementJs = document.getElementById("percentage-js");
+      let percentageJs = 0;
+
+      function increasePercentageJs() {
+        if (percentageJs <= 75) {
+          percentageElementJs.innerText = percentageJs + "%";
+          percentageJs++;
+        }
+      }
+
+      let intervalJs = setInterval(() => {
+        increasePercentageJs();
+        if (percentageJs > 75) {
+          clearInterval(intervalJs); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementPhp = document.getElementById("percentage-php");
+      let percentagePhp = 0;
+
+      function increasePercentagePhp() {
+        if (percentagePhp <= 50) {
+          percentageElementPhp.innerText = percentagePhp + "%";
+          percentagePhp++;
+        }
+      }
+
+      let intervalPhp = setInterval(() => {
+        increasePercentagePhp();
+        if (percentagePhp > 80) {
+          clearInterval(intervalPhp); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementPy = document.getElementById("percentage-py");
+      let percentagePy = 0;
+
+      function increasePercentagePy() {
+        if (percentagePy <= 30) {
+          percentageElementPy.innerText = percentagePy + "%";
+          percentagePy++;
+        }
+      }
+
+      let intervalPy = setInterval(() => {
+        increasePercentagePy();
+        if (percentagePy > 30) {
+          clearInterval(intervalPy); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      let percentageElementSql = document.getElementById("percentage-sql");
+      let percentageSql = 0;
+
+      function increasePercentageSql() {
+        if (percentageSql <= 25) {
+          percentageElementSql.innerText = percentageSql + "%";
+          percentageSql++;
+        }
+      }
+
+      let intervalSql = setInterval(() => {
+        increasePercentageSql();
+        if (percentageSql > 25) {
+          clearInterval(intervalSql); // Detener cuando llegue al 100%
+        }
+      }, 19);
+
+      const volver = document.getElementById('volver');
+      volver.addEventListener('click', ()=>{
+        window.history.back();
+      });
+
+      const pagPrincipal = document.getElementById('main');
+		    pagPrincipal.addEventListener('click', () => {
+			  window.location.href = '../../../vistas/profes.html';
+		  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.from('.logo', { opacity:0, y: -50, duration: 1, ease: 'bounce'});
+        gsap.from('h1', { opacity:0, x: -100, duration: 1.5, delay: 0.5});
+      });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        ScrollReveal().reveal('.botones-modal-enlaces', {delay: 500});
+        ScrollReveal().reveal('.card-container .card', {duration: 1000, origin: 'right', distance: '100px', interval: 200});
+        ScrollReveal().reveal('.carrusel', {delay: 500});
+        ScrollReveal().reveal('.formulario', {delay: 500});
+        ScrollReveal().reveal('footer', {delay: 500});
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

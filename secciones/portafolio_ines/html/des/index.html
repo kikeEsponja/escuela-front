@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Alien_terror</title>
+	<style>
+		body{
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 25px;
+		}
+    	img{
+    		width: 20%;
+        	border-radius: 10px;
+			transition: 0.3s ease transform;
+    	}
+		img:hover{
+			transform: scale(1.2);
+			margin: 1.5%;
+		}
+    	h2{
+			width: 50%;
+    		color: #f00;
+			font-size: 40px;
+			transition: 0.3s ease transform;
+    	}
+		h2:hover{
+			transform: scale(1.8);
+		}
+    	a{
+    		text-decoration:none;
+    	}
+		ul{
+			list-style: none;
+		}
+		button{
+			width: 10%;
+			height: 5%;
+			font-size: 20px;
+			border-radius: 10px;
+			background: linear-gradient(#f00, #ff0);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+		<h1>ALIEN TERROR</h1>
+		<div>
+			<a href='./alien_terror.html'><h2>Jugar</h2></a>
+			<h3>Instrucciones: </h3>
+			<h4>Movimientos: </h4>
+			<ul>
+				<li>izquierda: flecha izquierda</li>
+				<img src="./office-keyb-left.png">
+				<li>derecha: flecha derecha</li>
+				<img src="./office-keyb-right.png">
+				<li>arriba: flecha arriba</li>
+				<img src="./office-keyb-up.png">
+				<li>abajo: flecha abajo</li>
+				<img src="./office-keyb-down.png">
+				<li>disparar: espacio (barra espaciadora)</li>
+				<img src="./office-keyb-space.png">
+			</ul>
+		</div>
+		<button id="salir">Salir</button>
+	</center>
+	<script>
+		document.getElementById('salir').addEventListener('click',()=>{
+			window.location.href = '../../index.html';
+		});
+	</script>
+
+</body>
+</html>

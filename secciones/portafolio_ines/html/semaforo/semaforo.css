@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3d92b;
+    width: 100px;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+.rojo{
+    background: #800;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.amarillo{
+    background: #880;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.verde{
+    background: #080;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.poste{
+    background: #777;
+    width: 30px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.suelo{
+    background: #673b0d;
+    width: 400px;
+    height: 20px;
+}

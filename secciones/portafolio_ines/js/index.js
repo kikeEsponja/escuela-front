@@ -79,14 +79,109 @@ function aleatoria(){
     return arreglo[Math.floor(Math.random() * arreglo.length)];
 }
 
-function actualizarFrase(){
-    frases.style.opacity = 0;
-    setTimeout(function(){
-        frases.innerHTML = aleatoria();
-        frases.style.opacity = 1;
-    }, 
-    500
-    );
+if(frases){
+    function actualizarFrase(){
+        frases.style.opacity = 0;
+        setTimeout(function(){
+            frases.innerHTML = aleatoria();
+            frases.style.opacity = 1;
+        }, 
+        500
+        );
+    }
+    actualizarFrase();
+    setInterval(actualizarFrase, 5000);
 }
-actualizarFrase();
-setInterval(actualizarFrase, 5000);
+
+// FRASES CÉLEBRES EN INGLÉS
+var frasesEng = document.getElementById('frases-eng');
+
+const arregloEng = ['"To learn how to win, one must first know defeat.", Simón Bolivar.',
+    '"Whether you think you can or think you can not, you are right.", Henry Ford.',
+    '"The only thing worse than failing is not trying at all.", Franklin D. Roosvelt.', 
+    '"It is madness to hate all roses just because one of them pricked you.", El principito',
+    '"There are no favorable winds for those who do not know their destination.", Séneca'];
+
+if(frasesEng){
+    function aleatoriaEng(){
+        return arregloEng[Math.floor(Math.random() * arregloEng.length)];
+    }
+    
+    function actualizarFraseEng(){
+        frasesEng.style.opacity = 0;
+        setTimeout(function(){
+            frasesEng.innerHTML = aleatoriaEng();
+            frasesEng.style.opacity = 1;
+        }, 
+        500
+        );
+    }
+    actualizarFraseEng();
+    setInterval(actualizarFraseEng, 5000);
+}
+
+
+//TEMA OSCURO
+document.addEventListener('DOMContentLoaded', ()=>{
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || "light";
+
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    themeToggle.textContent = currentTheme === 'dark' ? '🌞' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+        const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        themeToggle.textContent = newTheme === 'dark' ? '🌞' : '🌙';
+        localStorage.setItem('theme', newTheme);
+    });
+});
+
+// INGLÉS Y ESPAÑOL
+const eng = document.getElementById('eng');
+const esp = document.getElementById('esp');
+
+if(eng){
+    eng.addEventListener('click', ()=>{
+        window.location.href = './html/indexen.html';
+    });
+}
+
+if(esp){
+    esp.addEventListener('click', ()=>{
+        window.location.href = '../index.html';
+    });
+};
+
+// REPOSITORIOS
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const username = 'kikeEsponja';
+    const repoContainer = document.getElementById('repos-container');
+
+    try{
+        const response = await fetch(`https://api.github.com/users/${username}/repos`);
+        const repos = await response.json();
+
+        const toRepos = repos
+        .filter(repo => !repo.fork)
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 6);
+
+        toRepos.forEach(repo => {
+            const repoCard = document.createElement('div');
+            repoCard.classList.add('repo-card');
+
+            repoCard.innerHTML = `
+            <h3>${repo.name}</h3>
+            <p>${repo.description || "No description available"}</p>
+            <a href="${repo.html_url}" target="_blank">Ver repositorio</a>
+            `;
+
+            repoContainer.appendChild(repoCard);
+        });
+    }catch (error){
+        console.error("error fetching repos", error);
+        repoContainer.innerHTML = "<p>Hubo un error al cargar los repositorios. Por favor, intente más tarde.</p>";
+    }
+});

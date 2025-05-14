@@ -13,14 +13,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger Paint" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
     <title>Portafolio</title>
+    <style>
+      ol, ul{
+        padding: 0;
+        width: 100%;
+      }
+      summary{
+        list-style: none;
+      }
+      p{
+        text-align: justify;
+      }
+      @media (max-width: 600px){
+        details{
+          width: 100%;
+        }
+      }
+    </style>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="/index.html" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="/img/webprog.jpg" width="7%"> E.A.B.C</a>
+        <a class="navbar-brand logo" href="../index.html" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="../img/webprog.jpg" width="7%"> E.A.B.C</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,11 +49,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#"><img src="../img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
+            </li>-->
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="/img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="/img/flag-england.svg" style="width: 50px; height: 50px;"></a>
+              <a class="nav-link" href="#"><img src="../img/flag-england.svg" style="width: 50px; height: 50px;"></a>
             </li>
           </ul>
         </div>
@@ -51,7 +68,16 @@
                 <summary>
                     <details>
                       <ul>
-
+                        <p>Mis estudios comenzaron, como la mayoría, en el jardín de infancia en la ciudad de Cumaná, capital del estado Sucre, Venezuela; y como la mayoría, me gradué con honores y yo ni cuenta me di.</p>
+                        <p>La escuela primaria, el instituto educativo Santa Inés, también en la misma ciudad, transcurrió sin novedades o algún acontecimiento en particular, también finalicé, sin pena ni gloria ya que para esa época estaba más enfocado en desarrollar mis habilidades artísticas.</p>
+                        <p>El liceo, o secundaría fue otro tema. Si bien comencé en el instituto Santa Inés, fui transferido a una escuela pública dos años después, donde me relacioné con personas (niños) con otros puntos de vista (sobre todo puntos de vista muy distintos a los míos). Luego a una escuela rural y finalmente a otra privada en otro estado, en otra ciudad.</p>
+                        <p>Luego de mucho buscar, al fin encontré cupo para la universidad, donde obtuve mi título de administración industrial. No puedo decir que fue sencillo, pero finalicé cinco años después</p>
+                        <p>Los estudios que realicé una vez culminé la carrera, nada tienen que ver con administración, o al menos no de forma directa, estos se fueron por la rama de la informática, área que siempre me acompañó desde muy joven.</p>
+                        <p>cursé informática básica,</p>
+                        <p>inglés,</p>
+                        <p>internet y ofimática,</p>
+                        <p>Desarrollo web,</p>
+                        <p>Programación básica.</p>
                       </ul>
                     </details>
                 </summary>
@@ -66,6 +92,7 @@
     <section>
     </section>
 
+
     <footer>
       <div id="contacto">
         <ul class="text-center">
@@ -74,6 +101,7 @@
           <!--<button type="button" onclick="goBack()" class="btn btn-warning">Volver</button>-->
           <a href="#inicio" class="btn btn-warning"><li>Volver arriba</li></a>
           <a href="../index.html" class="btn btn-warning"><li>Volver al portafolio</li></a>
+          <button class="btn btn-warning" id="main">Página principal</button>
         </ul>
       </div>
     </footer>
